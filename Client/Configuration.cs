@@ -15,7 +15,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace CyberSource.Client
+namespace cybersource-rest-client-dotnet.Client
 {
     /// <summary>
     /// Represents a set of configuration settings
@@ -328,7 +328,7 @@ namespace CyberSource.Client
         /// </summary>
         public static String ToDebugReport()
         {
-            String report = "C# SDK (CyberSource) Debug Report:\n";
+            String report = "C# SDK (cybersource-rest-client-dotnet) Debug Report:\n";
             report += "    OS: " + Environment.OSVersion + "\n";
             report += "    .NET Framework Version: " + Assembly
                      .GetExecutingAssembly()

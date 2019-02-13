@@ -13,10 +13,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using RestSharp;
-using CyberSource.Client;
-using CyberSource.Model;
+using cybersource-rest-client-dotnet.Client;
+using cybersource-rest-client-dotnet.Model;
 
-namespace CyberSource.Api
+namespace cybersource-rest-client-dotnet.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
@@ -30,7 +30,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Create</param>
         /// <param name="requestBody">Report subscription request payload</param>
         /// <returns></returns>
@@ -42,7 +42,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Create</param>
         /// <param name="requestBody">Report subscription request payload</param>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -53,7 +53,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Delete</param>
         /// <returns></returns>
         void DeleteSubscription (string reportName);
@@ -64,7 +64,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Delete</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteSubscriptionWithHttpInfo (string reportName);
@@ -74,7 +74,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ReportingV3ReportSubscriptionsGet200Response</returns>
         ReportingV3ReportSubscriptionsGet200Response GetAllSubscriptions ();
 
@@ -84,7 +84,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of ReportingV3ReportSubscriptionsGet200Response</returns>
         ApiResponse<ReportingV3ReportSubscriptionsGet200Response> GetAllSubscriptionsWithHttpInfo ();
         /// <summary>
@@ -93,7 +93,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Retrieve</param>
         /// <returns>ReportingV3ReportSubscriptionsGet200ResponseSubscriptions</returns>
         ReportingV3ReportSubscriptionsGet200ResponseSubscriptions GetSubscription (string reportName);
@@ -104,7 +104,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Retrieve</param>
         /// <returns>ApiResponse of ReportingV3ReportSubscriptionsGet200ResponseSubscriptions</returns>
         ApiResponse<ReportingV3ReportSubscriptionsGet200ResponseSubscriptions> GetSubscriptionWithHttpInfo (string reportName);
@@ -116,7 +116,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Create</param>
         /// <param name="requestBody">Report subscription request payload</param>
         /// <returns>Task of void</returns>
@@ -128,7 +128,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Create</param>
         /// <param name="requestBody">Report subscription request payload</param>
         /// <returns>Task of ApiResponse</returns>
@@ -139,7 +139,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Delete</param>
         /// <returns>Task of void</returns>
         System.Threading.Tasks.Task DeleteSubscriptionAsync (string reportName);
@@ -150,7 +150,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Delete</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteSubscriptionAsyncWithHttpInfo (string reportName);
@@ -160,7 +160,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ReportingV3ReportSubscriptionsGet200Response</returns>
         System.Threading.Tasks.Task<ReportingV3ReportSubscriptionsGet200Response> GetAllSubscriptionsAsync ();
 
@@ -170,7 +170,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (ReportingV3ReportSubscriptionsGet200Response)</returns>
         System.Threading.Tasks.Task<ApiResponse<ReportingV3ReportSubscriptionsGet200Response>> GetAllSubscriptionsAsyncWithHttpInfo ();
         /// <summary>
@@ -179,7 +179,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Retrieve</param>
         /// <returns>Task of ReportingV3ReportSubscriptionsGet200ResponseSubscriptions</returns>
         System.Threading.Tasks.Task<ReportingV3ReportSubscriptionsGet200ResponseSubscriptions> GetSubscriptionAsync (string reportName);
@@ -190,7 +190,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Retrieve</param>
         /// <returns>Task of ApiResponse (ReportingV3ReportSubscriptionsGet200ResponseSubscriptions)</returns>
         System.Threading.Tasks.Task<ApiResponse<ReportingV3ReportSubscriptionsGet200ResponseSubscriptions>> GetSubscriptionAsyncWithHttpInfo (string reportName);
@@ -202,7 +202,7 @@ namespace CyberSource.Api
     /// </summary>
     public partial class ReportSubscriptionsApi : IReportSubscriptionsApi
     {
-        private CyberSource.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private cybersource-rest-client-dotnet.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ReportSubscriptionsApi"/> class.
@@ -212,7 +212,7 @@ namespace CyberSource.Api
         {
             this.Configuration = new Configuration(new ApiClient(basePath));
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -234,7 +234,7 @@ namespace CyberSource.Api
             else
                 this.Configuration = configuration;
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -271,7 +271,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
         /// </summary>
-        public CyberSource.Client.ExceptionFactory ExceptionFactory
+        public cybersource-rest-client-dotnet.Client.ExceptionFactory ExceptionFactory
         {
             get
             {
@@ -309,7 +309,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Create Report Subscription for a report name by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Create</param>
         /// <param name="requestBody">Report subscription request payload</param>
         /// <returns></returns>
@@ -321,7 +321,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Create Report Subscription for a report name by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Create</param>
         /// <param name="requestBody">Report subscription request payload</param>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -334,7 +334,7 @@ namespace CyberSource.Api
             if (requestBody == null)
                 throw new ApiException(400, "Missing required parameter 'requestBody' when calling ReportSubscriptionsApi->CreateSubscription");
 
-            var localVarPath = "/reporting/v3/report-subscriptions/{reportName}";
+            var localVarPath = $"/reporting/v3/report-subscriptions/{reportName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -388,7 +388,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Create Report Subscription for a report name by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Create</param>
         /// <param name="requestBody">Report subscription request payload</param>
         /// <returns>Task of void</returns>
@@ -401,7 +401,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Create Report Subscription for a report name by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Create</param>
         /// <param name="requestBody">Report subscription request payload</param>
         /// <returns>Task of ApiResponse</returns>
@@ -414,7 +414,7 @@ namespace CyberSource.Api
             if (requestBody == null)
                 throw new ApiException(400, "Missing required parameter 'requestBody' when calling ReportSubscriptionsApi->CreateSubscription");
 
-            var localVarPath = "/reporting/v3/report-subscriptions/{reportName}";
+            var localVarPath = $"/reporting/v3/report-subscriptions/{reportName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -468,7 +468,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Delete subscription of a report name by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Delete</param>
         /// <returns></returns>
         public void DeleteSubscription (string reportName)
@@ -479,7 +479,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Delete subscription of a report name by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Delete</param>
         /// <returns>ApiResponse of Object(void)</returns>
         public ApiResponse<Object> DeleteSubscriptionWithHttpInfo (string reportName)
@@ -488,7 +488,7 @@ namespace CyberSource.Api
             if (reportName == null)
                 throw new ApiException(400, "Missing required parameter 'reportName' when calling ReportSubscriptionsApi->DeleteSubscription");
 
-            var localVarPath = "/reporting/v3/report-subscriptions/{reportName}";
+            var localVarPath = $"/reporting/v3/report-subscriptions/{reportName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -534,7 +534,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Delete subscription of a report name by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Delete</param>
         /// <returns>Task of void</returns>
         public async System.Threading.Tasks.Task DeleteSubscriptionAsync (string reportName)
@@ -546,7 +546,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Delete subscription of a report name by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Delete</param>
         /// <returns>Task of ApiResponse</returns>
         public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteSubscriptionAsyncWithHttpInfo (string reportName)
@@ -555,7 +555,7 @@ namespace CyberSource.Api
             if (reportName == null)
                 throw new ApiException(400, "Missing required parameter 'reportName' when calling ReportSubscriptionsApi->DeleteSubscription");
 
-            var localVarPath = "/reporting/v3/report-subscriptions/{reportName}";
+            var localVarPath = $"/reporting/v3/report-subscriptions/{reportName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -601,7 +601,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve all subscriptions by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ReportingV3ReportSubscriptionsGet200Response</returns>
         public ReportingV3ReportSubscriptionsGet200Response GetAllSubscriptions ()
         {
@@ -612,12 +612,12 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve all subscriptions by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of ReportingV3ReportSubscriptionsGet200Response</returns>
         public ApiResponse< ReportingV3ReportSubscriptionsGet200Response > GetAllSubscriptionsWithHttpInfo ()
         {
 
-            var localVarPath = "/reporting/v3/report-subscriptions";
+            var localVarPath = $"/reporting/v3/report-subscriptions";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -662,7 +662,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve all subscriptions by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ReportingV3ReportSubscriptionsGet200Response</returns>
         public async System.Threading.Tasks.Task<ReportingV3ReportSubscriptionsGet200Response> GetAllSubscriptionsAsync ()
         {
@@ -674,12 +674,12 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve all subscriptions by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>Task of ApiResponse (ReportingV3ReportSubscriptionsGet200Response)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<ReportingV3ReportSubscriptionsGet200Response>> GetAllSubscriptionsAsyncWithHttpInfo ()
         {
 
-            var localVarPath = "/reporting/v3/report-subscriptions";
+            var localVarPath = $"/reporting/v3/report-subscriptions";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -724,7 +724,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve subscription for a report name by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Retrieve</param>
         /// <returns>ReportingV3ReportSubscriptionsGet200ResponseSubscriptions</returns>
         public ReportingV3ReportSubscriptionsGet200ResponseSubscriptions GetSubscription (string reportName)
@@ -736,7 +736,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve subscription for a report name by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Retrieve</param>
         /// <returns>ApiResponse of ReportingV3ReportSubscriptionsGet200ResponseSubscriptions</returns>
         public ApiResponse< ReportingV3ReportSubscriptionsGet200ResponseSubscriptions > GetSubscriptionWithHttpInfo (string reportName)
@@ -745,7 +745,7 @@ namespace CyberSource.Api
             if (reportName == null)
                 throw new ApiException(400, "Missing required parameter 'reportName' when calling ReportSubscriptionsApi->GetSubscription");
 
-            var localVarPath = "/reporting/v3/report-subscriptions/{reportName}";
+            var localVarPath = $"/reporting/v3/report-subscriptions/{reportName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -791,7 +791,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve subscription for a report name by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Retrieve</param>
         /// <returns>Task of ReportingV3ReportSubscriptionsGet200ResponseSubscriptions</returns>
         public async System.Threading.Tasks.Task<ReportingV3ReportSubscriptionsGet200ResponseSubscriptions> GetSubscriptionAsync (string reportName)
@@ -804,7 +804,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve subscription for a report name by organization 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportName">Name of the Report to Retrieve</param>
         /// <returns>Task of ApiResponse (ReportingV3ReportSubscriptionsGet200ResponseSubscriptions)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<ReportingV3ReportSubscriptionsGet200ResponseSubscriptions>> GetSubscriptionAsyncWithHttpInfo (string reportName)
@@ -813,7 +813,7 @@ namespace CyberSource.Api
             if (reportName == null)
                 throw new ApiException(400, "Missing required parameter 'reportName' when calling ReportSubscriptionsApi->GetSubscription");
 
-            var localVarPath = "/reporting/v3/report-subscriptions/{reportName}";
+            var localVarPath = $"/reporting/v3/report-subscriptions/{reportName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

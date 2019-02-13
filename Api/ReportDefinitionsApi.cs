@@ -13,10 +13,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using RestSharp;
-using CyberSource.Client;
-using CyberSource.Model;
+using cybersource-rest-client-dotnet.Client;
+using cybersource-rest-client-dotnet.Model;
 
-namespace CyberSource.Api
+namespace cybersource-rest-client-dotnet.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
@@ -30,7 +30,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// The report definition name must be used as path parameter exclusive of each other
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportDefinitionName">Name of the Report definition to retrieve</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>ReportingV3ReportDefinitionsNameGet200Response</returns>
@@ -42,7 +42,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// The report definition name must be used as path parameter exclusive of each other
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportDefinitionName">Name of the Report definition to retrieve</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>ApiResponse of ReportingV3ReportDefinitionsNameGet200Response</returns>
@@ -53,7 +53,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>ReportingV3ReportDefinitionsGet200Response</returns>
         ReportingV3ReportDefinitionsGet200Response GetResourceV2Info (string organizationId = null);
@@ -64,7 +64,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>ApiResponse of ReportingV3ReportDefinitionsGet200Response</returns>
         ApiResponse<ReportingV3ReportDefinitionsGet200Response> GetResourceV2InfoWithHttpInfo (string organizationId = null);
@@ -76,7 +76,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// The report definition name must be used as path parameter exclusive of each other
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportDefinitionName">Name of the Report definition to retrieve</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>Task of ReportingV3ReportDefinitionsNameGet200Response</returns>
@@ -88,7 +88,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// The report definition name must be used as path parameter exclusive of each other
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportDefinitionName">Name of the Report definition to retrieve</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>Task of ApiResponse (ReportingV3ReportDefinitionsNameGet200Response)</returns>
@@ -99,7 +99,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>Task of ReportingV3ReportDefinitionsGet200Response</returns>
         System.Threading.Tasks.Task<ReportingV3ReportDefinitionsGet200Response> GetResourceV2InfoAsync (string organizationId = null);
@@ -110,7 +110,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>Task of ApiResponse (ReportingV3ReportDefinitionsGet200Response)</returns>
         System.Threading.Tasks.Task<ApiResponse<ReportingV3ReportDefinitionsGet200Response>> GetResourceV2InfoAsyncWithHttpInfo (string organizationId = null);
@@ -122,7 +122,7 @@ namespace CyberSource.Api
     /// </summary>
     public partial class ReportDefinitionsApi : IReportDefinitionsApi
     {
-        private CyberSource.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private cybersource-rest-client-dotnet.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ReportDefinitionsApi"/> class.
@@ -132,7 +132,7 @@ namespace CyberSource.Api
         {
             this.Configuration = new Configuration(new ApiClient(basePath));
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -154,7 +154,7 @@ namespace CyberSource.Api
             else
                 this.Configuration = configuration;
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -191,7 +191,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
         /// </summary>
-        public CyberSource.Client.ExceptionFactory ExceptionFactory
+        public cybersource-rest-client-dotnet.Client.ExceptionFactory ExceptionFactory
         {
             get
             {
@@ -229,7 +229,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get a single report definition information The report definition name must be used as path parameter exclusive of each other
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportDefinitionName">Name of the Report definition to retrieve</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>ReportingV3ReportDefinitionsNameGet200Response</returns>
@@ -242,7 +242,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get a single report definition information The report definition name must be used as path parameter exclusive of each other
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportDefinitionName">Name of the Report definition to retrieve</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>ApiResponse of ReportingV3ReportDefinitionsNameGet200Response</returns>
@@ -252,7 +252,7 @@ namespace CyberSource.Api
             if (reportDefinitionName == null)
                 throw new ApiException(400, "Missing required parameter 'reportDefinitionName' when calling ReportDefinitionsApi->GetResourceInfoByReportDefinition");
 
-            var localVarPath = "/reporting/v3/report-definitions/{reportDefinitionName}";
+            var localVarPath = $"/reporting/v3/report-definitions/{reportDefinitionName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -299,7 +299,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get a single report definition information The report definition name must be used as path parameter exclusive of each other
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportDefinitionName">Name of the Report definition to retrieve</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>Task of ReportingV3ReportDefinitionsNameGet200Response</returns>
@@ -313,7 +313,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get a single report definition information The report definition name must be used as path parameter exclusive of each other
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="reportDefinitionName">Name of the Report definition to retrieve</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>Task of ApiResponse (ReportingV3ReportDefinitionsNameGet200Response)</returns>
@@ -323,7 +323,7 @@ namespace CyberSource.Api
             if (reportDefinitionName == null)
                 throw new ApiException(400, "Missing required parameter 'reportDefinitionName' when calling ReportDefinitionsApi->GetResourceInfoByReportDefinition");
 
-            var localVarPath = "/reporting/v3/report-definitions/{reportDefinitionName}";
+            var localVarPath = $"/reporting/v3/report-definitions/{reportDefinitionName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -370,7 +370,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get reporting resource information 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>ReportingV3ReportDefinitionsGet200Response</returns>
         public ReportingV3ReportDefinitionsGet200Response GetResourceV2Info (string organizationId = null)
@@ -382,13 +382,13 @@ namespace CyberSource.Api
         /// <summary>
         /// Get reporting resource information 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>ApiResponse of ReportingV3ReportDefinitionsGet200Response</returns>
         public ApiResponse< ReportingV3ReportDefinitionsGet200Response > GetResourceV2InfoWithHttpInfo (string organizationId = null)
         {
 
-            var localVarPath = "/reporting/v3/report-definitions";
+            var localVarPath = $"/reporting/v3/report-definitions";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -434,7 +434,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get reporting resource information 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>Task of ReportingV3ReportDefinitionsGet200Response</returns>
         public async System.Threading.Tasks.Task<ReportingV3ReportDefinitionsGet200Response> GetResourceV2InfoAsync (string organizationId = null)
@@ -447,13 +447,13 @@ namespace CyberSource.Api
         /// <summary>
         /// Get reporting resource information 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>Task of ApiResponse (ReportingV3ReportDefinitionsGet200Response)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<ReportingV3ReportDefinitionsGet200Response>> GetResourceV2InfoAsyncWithHttpInfo (string organizationId = null)
         {
 
-            var localVarPath = "/reporting/v3/report-definitions";
+            var localVarPath = $"/reporting/v3/report-definitions";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

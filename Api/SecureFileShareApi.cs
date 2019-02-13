@@ -13,10 +13,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using RestSharp;
-using CyberSource.Client;
-using CyberSource.Model;
+using cybersource-rest-client-dotnet.Client;
+using cybersource-rest-client-dotnet.Model;
 
-namespace CyberSource.Api
+namespace cybersource-rest-client-dotnet.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
@@ -30,7 +30,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Download a file for the given file identifier
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fileId">Unique identifier for each file</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns></returns>
@@ -42,7 +42,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Download a file for the given file identifier
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fileId">Unique identifier for each file</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -53,7 +53,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Get list of files and it&#39;s information of them available inside the report directory
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="startDate">Valid start date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="endDate">Valid end date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
@@ -66,7 +66,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Get list of files and it&#39;s information of them available inside the report directory
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="startDate">Valid start date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="endDate">Valid end date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
@@ -80,7 +80,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Download a file for the given file identifier
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fileId">Unique identifier for each file</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>Task of void</returns>
@@ -92,7 +92,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Download a file for the given file identifier
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fileId">Unique identifier for each file</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>Task of ApiResponse</returns>
@@ -103,7 +103,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Get list of files and it&#39;s information of them available inside the report directory
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="startDate">Valid start date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="endDate">Valid end date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
@@ -116,7 +116,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Get list of files and it&#39;s information of them available inside the report directory
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="startDate">Valid start date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="endDate">Valid end date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
@@ -130,7 +130,7 @@ namespace CyberSource.Api
     /// </summary>
     public partial class SecureFileShareApi : ISecureFileShareApi
     {
-        private CyberSource.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private cybersource-rest-client-dotnet.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SecureFileShareApi"/> class.
@@ -140,7 +140,7 @@ namespace CyberSource.Api
         {
             this.Configuration = new Configuration(new ApiClient(basePath));
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -162,7 +162,7 @@ namespace CyberSource.Api
             else
                 this.Configuration = configuration;
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -199,7 +199,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
         /// </summary>
-        public CyberSource.Client.ExceptionFactory ExceptionFactory
+        public cybersource-rest-client-dotnet.Client.ExceptionFactory ExceptionFactory
         {
             get
             {
@@ -237,7 +237,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Download a file with file identifier Download a file for the given file identifier
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fileId">Unique identifier for each file</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns></returns>
@@ -249,7 +249,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Download a file with file identifier Download a file for the given file identifier
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fileId">Unique identifier for each file</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -259,7 +259,7 @@ namespace CyberSource.Api
             if (fileId == null)
                 throw new ApiException(400, "Missing required parameter 'fileId' when calling SecureFileShareApi->GetFile");
 
-            var localVarPath = "/v1/files/{fileId}";
+            var localVarPath = $"/v1/files/{fileId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -308,7 +308,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Download a file with file identifier Download a file for the given file identifier
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fileId">Unique identifier for each file</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>Task of void</returns>
@@ -321,7 +321,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Download a file with file identifier Download a file for the given file identifier
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fileId">Unique identifier for each file</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>Task of ApiResponse</returns>
@@ -331,7 +331,7 @@ namespace CyberSource.Api
             if (fileId == null)
                 throw new ApiException(400, "Missing required parameter 'fileId' when calling SecureFileShareApi->GetFile");
 
-            var localVarPath = "/v1/files/{fileId}";
+            var localVarPath = $"/v1/files/{fileId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -380,7 +380,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get list of files Get list of files and it&#39;s information of them available inside the report directory
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="startDate">Valid start date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="endDate">Valid end date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
@@ -394,7 +394,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get list of files Get list of files and it&#39;s information of them available inside the report directory
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="startDate">Valid start date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="endDate">Valid end date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
@@ -408,7 +408,7 @@ namespace CyberSource.Api
             if (endDate == null)
                 throw new ApiException(400, "Missing required parameter 'endDate' when calling SecureFileShareApi->GetFileDetails");
 
-            var localVarPath = "/v1/file-details";
+            var localVarPath = $"/v1/file-details";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -456,7 +456,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get list of files Get list of files and it&#39;s information of them available inside the report directory
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="startDate">Valid start date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="endDate">Valid end date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
@@ -471,7 +471,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get list of files Get list of files and it&#39;s information of them available inside the report directory
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="startDate">Valid start date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="endDate">Valid end date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
@@ -485,7 +485,7 @@ namespace CyberSource.Api
             if (endDate == null)
                 throw new ApiException(400, "Missing required parameter 'endDate' when calling SecureFileShareApi->GetFileDetails");
 
-            var localVarPath = "/v1/file-details";
+            var localVarPath = $"/v1/file-details";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

@@ -11,7 +11,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace CyberSource.Client
+namespace cybersource-rest-client-dotnet.Client
 {
     /// <summary>
     /// API Response

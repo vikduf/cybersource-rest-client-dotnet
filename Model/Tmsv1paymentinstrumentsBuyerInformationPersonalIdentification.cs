@@ -20,9 +20,9 @@ using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.ComponentModel.DataAnnotations;
-using SwaggerDateConverter = CyberSource.Client.SwaggerDateConverter;
+using SwaggerDateConverter = cybersource-rest-client-dotnet.Client.SwaggerDateConverter;
 
-namespace CyberSource.Model
+namespace cybersource-rest-client-dotnet.Model
 {
     /// <summary>
     /// Tmsv1paymentinstrumentsBuyerInformationPersonalIdentification

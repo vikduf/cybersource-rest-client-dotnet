@@ -22,7 +22,7 @@ using Newtonsoft.Json;
 using RestSharp;
 using AuthenticationSdk.core;
 
-namespace CyberSource.Client
+namespace cybersource-rest-client-dotnet.Client
 {
     /// <summary>
     /// API client is mainly responsible for making the HTTP call to the API backend.

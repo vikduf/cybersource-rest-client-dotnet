@@ -13,10 +13,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using RestSharp;
-using CyberSource.Client;
-using CyberSource.Model;
+using cybersource-rest-client-dotnet.Client;
+using cybersource-rest-client-dotnet.Model;
 
-namespace CyberSource.Api
+namespace cybersource-rest-client-dotnet.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
@@ -30,7 +30,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Returns a token representing the supplied card details. The token replaces card data and can be used as the Subscription ID in the CyberSource Simple Order API or SCMP API. This is an unauthenticated call that you should initiate from your customer’s device or browser.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tokenizeRequest"> (optional)</param>
         /// <returns>FlexV1TokensPost200Response</returns>
         FlexV1TokensPost200Response Tokenize (TokenizeRequest tokenizeRequest = null);
@@ -41,7 +41,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Returns a token representing the supplied card details. The token replaces card data and can be used as the Subscription ID in the CyberSource Simple Order API or SCMP API. This is an unauthenticated call that you should initiate from your customer’s device or browser.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tokenizeRequest"> (optional)</param>
         /// <returns>ApiResponse of FlexV1TokensPost200Response</returns>
         ApiResponse<FlexV1TokensPost200Response> TokenizeWithHttpInfo (TokenizeRequest tokenizeRequest = null);
@@ -53,7 +53,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Returns a token representing the supplied card details. The token replaces card data and can be used as the Subscription ID in the CyberSource Simple Order API or SCMP API. This is an unauthenticated call that you should initiate from your customer’s device or browser.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tokenizeRequest"> (optional)</param>
         /// <returns>Task of FlexV1TokensPost200Response</returns>
         System.Threading.Tasks.Task<FlexV1TokensPost200Response> TokenizeAsync (TokenizeRequest tokenizeRequest = null);
@@ -64,7 +64,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Returns a token representing the supplied card details. The token replaces card data and can be used as the Subscription ID in the CyberSource Simple Order API or SCMP API. This is an unauthenticated call that you should initiate from your customer’s device or browser.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tokenizeRequest"> (optional)</param>
         /// <returns>Task of ApiResponse (FlexV1TokensPost200Response)</returns>
         System.Threading.Tasks.Task<ApiResponse<FlexV1TokensPost200Response>> TokenizeAsyncWithHttpInfo (TokenizeRequest tokenizeRequest = null);
@@ -76,7 +76,7 @@ namespace CyberSource.Api
     /// </summary>
     public partial class FlexTokenApi : IFlexTokenApi
     {
-        private CyberSource.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private cybersource-rest-client-dotnet.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="FlexTokenApi"/> class.
@@ -86,7 +86,7 @@ namespace CyberSource.Api
         {
             this.Configuration = new Configuration(new ApiClient(basePath));
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -108,7 +108,7 @@ namespace CyberSource.Api
             else
                 this.Configuration = configuration;
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -145,7 +145,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
         /// </summary>
-        public CyberSource.Client.ExceptionFactory ExceptionFactory
+        public cybersource-rest-client-dotnet.Client.ExceptionFactory ExceptionFactory
         {
             get
             {
@@ -183,7 +183,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Flex Tokenize card Returns a token representing the supplied card details. The token replaces card data and can be used as the Subscription ID in the CyberSource Simple Order API or SCMP API. This is an unauthenticated call that you should initiate from your customer’s device or browser.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tokenizeRequest"> (optional)</param>
         /// <returns>FlexV1TokensPost200Response</returns>
         public FlexV1TokensPost200Response Tokenize (TokenizeRequest tokenizeRequest = null)
@@ -195,13 +195,13 @@ namespace CyberSource.Api
         /// <summary>
         /// Flex Tokenize card Returns a token representing the supplied card details. The token replaces card data and can be used as the Subscription ID in the CyberSource Simple Order API or SCMP API. This is an unauthenticated call that you should initiate from your customer’s device or browser.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tokenizeRequest"> (optional)</param>
         /// <returns>ApiResponse of FlexV1TokensPost200Response</returns>
         public ApiResponse< FlexV1TokensPost200Response > TokenizeWithHttpInfo (TokenizeRequest tokenizeRequest = null)
         {
 
-            var localVarPath = "/flex/v1/tokens/";
+            var localVarPath = $"/flex/v1/tokens/";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -254,7 +254,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Flex Tokenize card Returns a token representing the supplied card details. The token replaces card data and can be used as the Subscription ID in the CyberSource Simple Order API or SCMP API. This is an unauthenticated call that you should initiate from your customer’s device or browser.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tokenizeRequest"> (optional)</param>
         /// <returns>Task of FlexV1TokensPost200Response</returns>
         public async System.Threading.Tasks.Task<FlexV1TokensPost200Response> TokenizeAsync (TokenizeRequest tokenizeRequest = null)
@@ -267,13 +267,13 @@ namespace CyberSource.Api
         /// <summary>
         /// Flex Tokenize card Returns a token representing the supplied card details. The token replaces card data and can be used as the Subscription ID in the CyberSource Simple Order API or SCMP API. This is an unauthenticated call that you should initiate from your customer’s device or browser.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tokenizeRequest"> (optional)</param>
         /// <returns>Task of ApiResponse (FlexV1TokensPost200Response)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<FlexV1TokensPost200Response>> TokenizeAsyncWithHttpInfo (TokenizeRequest tokenizeRequest = null)
         {
 
-            var localVarPath = "/flex/v1/tokens/";
+            var localVarPath = $"/flex/v1/tokens/";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

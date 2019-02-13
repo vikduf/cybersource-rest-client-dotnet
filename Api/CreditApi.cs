@@ -13,10 +13,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using RestSharp;
-using CyberSource.Client;
-using CyberSource.Model;
+using cybersource-rest-client-dotnet.Client;
+using cybersource-rest-client-dotnet.Model;
 
-namespace CyberSource.Api
+namespace cybersource-rest-client-dotnet.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
@@ -30,7 +30,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// POST to the credit resource to credit funds to a specified credit card.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCreditRequest"></param>
         /// <returns>PtsV2CreditsPost201Response</returns>
         PtsV2CreditsPost201Response CreateCredit (CreateCreditRequest createCreditRequest);
@@ -41,7 +41,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// POST to the credit resource to credit funds to a specified credit card.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCreditRequest"></param>
         /// <returns>ApiResponse of PtsV2CreditsPost201Response</returns>
         ApiResponse<PtsV2CreditsPost201Response> CreateCreditWithHttpInfo (CreateCreditRequest createCreditRequest);
@@ -53,7 +53,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// POST to the credit resource to credit funds to a specified credit card.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCreditRequest"></param>
         /// <returns>Task of PtsV2CreditsPost201Response</returns>
         System.Threading.Tasks.Task<PtsV2CreditsPost201Response> CreateCreditAsync (CreateCreditRequest createCreditRequest);
@@ -64,7 +64,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// POST to the credit resource to credit funds to a specified credit card.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCreditRequest"></param>
         /// <returns>Task of ApiResponse (PtsV2CreditsPost201Response)</returns>
         System.Threading.Tasks.Task<ApiResponse<PtsV2CreditsPost201Response>> CreateCreditAsyncWithHttpInfo (CreateCreditRequest createCreditRequest);
@@ -76,7 +76,7 @@ namespace CyberSource.Api
     /// </summary>
     public partial class CreditApi : ICreditApi
     {
-        private CyberSource.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private cybersource-rest-client-dotnet.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CreditApi"/> class.
@@ -86,7 +86,7 @@ namespace CyberSource.Api
         {
             this.Configuration = new Configuration(new ApiClient(basePath));
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -108,7 +108,7 @@ namespace CyberSource.Api
             else
                 this.Configuration = configuration;
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -145,7 +145,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
         /// </summary>
-        public CyberSource.Client.ExceptionFactory ExceptionFactory
+        public cybersource-rest-client-dotnet.Client.ExceptionFactory ExceptionFactory
         {
             get
             {
@@ -183,7 +183,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Process a Credit POST to the credit resource to credit funds to a specified credit card.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCreditRequest"></param>
         /// <returns>PtsV2CreditsPost201Response</returns>
         public PtsV2CreditsPost201Response CreateCredit (CreateCreditRequest createCreditRequest)
@@ -195,7 +195,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Process a Credit POST to the credit resource to credit funds to a specified credit card.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCreditRequest"></param>
         /// <returns>ApiResponse of PtsV2CreditsPost201Response</returns>
         public ApiResponse< PtsV2CreditsPost201Response > CreateCreditWithHttpInfo (CreateCreditRequest createCreditRequest)
@@ -204,7 +204,7 @@ namespace CyberSource.Api
             if (createCreditRequest == null)
                 throw new ApiException(400, "Missing required parameter 'createCreditRequest' when calling CreditApi->CreateCredit");
 
-            var localVarPath = "/pts/v2/credits";
+            var localVarPath = $"/pts/v2/credits";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -257,7 +257,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Process a Credit POST to the credit resource to credit funds to a specified credit card.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCreditRequest"></param>
         /// <returns>Task of PtsV2CreditsPost201Response</returns>
         public async System.Threading.Tasks.Task<PtsV2CreditsPost201Response> CreateCreditAsync (CreateCreditRequest createCreditRequest)
@@ -270,7 +270,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Process a Credit POST to the credit resource to credit funds to a specified credit card.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createCreditRequest"></param>
         /// <returns>Task of ApiResponse (PtsV2CreditsPost201Response)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<PtsV2CreditsPost201Response>> CreateCreditAsyncWithHttpInfo (CreateCreditRequest createCreditRequest)
@@ -279,7 +279,7 @@ namespace CyberSource.Api
             if (createCreditRequest == null)
                 throw new ApiException(400, "Missing required parameter 'createCreditRequest' when calling CreditApi->CreateCredit");
 
-            var localVarPath = "/pts/v2/credits";
+            var localVarPath = $"/pts/v2/credits";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

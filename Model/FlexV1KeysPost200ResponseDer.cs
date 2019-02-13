@@ -20,9 +20,9 @@ using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.ComponentModel.DataAnnotations;
-using SwaggerDateConverter = CyberSource.Client.SwaggerDateConverter;
+using SwaggerDateConverter = cybersource-rest-client-dotnet.Client.SwaggerDateConverter;
 
-namespace CyberSource.Model
+namespace cybersource-rest-client-dotnet.Model
 {
     /// <summary>
     /// The public key in DER format. Used to validate the response from the Tokenize Card request. Additionally this format is useful for client side encryption in Android and iOS implementations.

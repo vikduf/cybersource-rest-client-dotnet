@@ -13,10 +13,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using RestSharp;
-using CyberSource.Client;
-using CyberSource.Model;
+using cybersource-rest-client-dotnet.Client;
+using cybersource-rest-client-dotnet.Model;
 
-namespace CyberSource.Api
+namespace cybersource-rest-client-dotnet.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
@@ -30,7 +30,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the capture ID in the POST request to refund the captured amount. 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundCaptureRequest"></param>
         /// <param name="id">The capture ID. This ID is returned from a previous capture request.</param>
         /// <returns>PtsV2PaymentsRefundPost201Response</returns>
@@ -42,7 +42,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the capture ID in the POST request to refund the captured amount. 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundCaptureRequest"></param>
         /// <param name="id">The capture ID. This ID is returned from a previous capture request.</param>
         /// <returns>ApiResponse of PtsV2PaymentsRefundPost201Response</returns>
@@ -53,7 +53,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the payment ID in the POST request to refund the payment amount. 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundPaymentRequest"></param>
         /// <param name="id">The payment ID. This ID is returned from a previous payment request.</param>
         /// <returns>PtsV2PaymentsRefundPost201Response</returns>
@@ -65,7 +65,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the payment ID in the POST request to refund the payment amount. 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundPaymentRequest"></param>
         /// <param name="id">The payment ID. This ID is returned from a previous payment request.</param>
         /// <returns>ApiResponse of PtsV2PaymentsRefundPost201Response</returns>
@@ -78,7 +78,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the capture ID in the POST request to refund the captured amount. 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundCaptureRequest"></param>
         /// <param name="id">The capture ID. This ID is returned from a previous capture request.</param>
         /// <returns>Task of PtsV2PaymentsRefundPost201Response</returns>
@@ -90,7 +90,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the capture ID in the POST request to refund the captured amount. 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundCaptureRequest"></param>
         /// <param name="id">The capture ID. This ID is returned from a previous capture request.</param>
         /// <returns>Task of ApiResponse (PtsV2PaymentsRefundPost201Response)</returns>
@@ -101,7 +101,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the payment ID in the POST request to refund the payment amount. 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundPaymentRequest"></param>
         /// <param name="id">The payment ID. This ID is returned from a previous payment request.</param>
         /// <returns>Task of PtsV2PaymentsRefundPost201Response</returns>
@@ -113,7 +113,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the payment ID in the POST request to refund the payment amount. 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundPaymentRequest"></param>
         /// <param name="id">The payment ID. This ID is returned from a previous payment request.</param>
         /// <returns>Task of ApiResponse (PtsV2PaymentsRefundPost201Response)</returns>
@@ -126,7 +126,7 @@ namespace CyberSource.Api
     /// </summary>
     public partial class RefundApi : IRefundApi
     {
-        private CyberSource.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private cybersource-rest-client-dotnet.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="RefundApi"/> class.
@@ -136,7 +136,7 @@ namespace CyberSource.Api
         {
             this.Configuration = new Configuration(new ApiClient(basePath));
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -158,7 +158,7 @@ namespace CyberSource.Api
             else
                 this.Configuration = configuration;
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -195,7 +195,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
         /// </summary>
-        public CyberSource.Client.ExceptionFactory ExceptionFactory
+        public cybersource-rest-client-dotnet.Client.ExceptionFactory ExceptionFactory
         {
             get
             {
@@ -233,7 +233,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Refund a Capture Include the capture ID in the POST request to refund the captured amount. 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundCaptureRequest"></param>
         /// <param name="id">The capture ID. This ID is returned from a previous capture request.</param>
         /// <returns>PtsV2PaymentsRefundPost201Response</returns>
@@ -246,7 +246,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Refund a Capture Include the capture ID in the POST request to refund the captured amount. 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundCaptureRequest"></param>
         /// <param name="id">The capture ID. This ID is returned from a previous capture request.</param>
         /// <returns>ApiResponse of PtsV2PaymentsRefundPost201Response</returns>
@@ -259,7 +259,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling RefundApi->RefundCapture");
 
-            var localVarPath = "/pts/v2/captures/{id}/refunds";
+            var localVarPath = $"/pts/v2/captures/{id}/refunds";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -313,7 +313,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Refund a Capture Include the capture ID in the POST request to refund the captured amount. 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundCaptureRequest"></param>
         /// <param name="id">The capture ID. This ID is returned from a previous capture request.</param>
         /// <returns>Task of PtsV2PaymentsRefundPost201Response</returns>
@@ -327,7 +327,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Refund a Capture Include the capture ID in the POST request to refund the captured amount. 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundCaptureRequest"></param>
         /// <param name="id">The capture ID. This ID is returned from a previous capture request.</param>
         /// <returns>Task of ApiResponse (PtsV2PaymentsRefundPost201Response)</returns>
@@ -340,7 +340,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling RefundApi->RefundCapture");
 
-            var localVarPath = "/pts/v2/captures/{id}/refunds";
+            var localVarPath = $"/pts/v2/captures/{id}/refunds";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -394,7 +394,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Refund a Payment Include the payment ID in the POST request to refund the payment amount. 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundPaymentRequest"></param>
         /// <param name="id">The payment ID. This ID is returned from a previous payment request.</param>
         /// <returns>PtsV2PaymentsRefundPost201Response</returns>
@@ -407,7 +407,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Refund a Payment Include the payment ID in the POST request to refund the payment amount. 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundPaymentRequest"></param>
         /// <param name="id">The payment ID. This ID is returned from a previous payment request.</param>
         /// <returns>ApiResponse of PtsV2PaymentsRefundPost201Response</returns>
@@ -420,7 +420,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling RefundApi->RefundPayment");
 
-            var localVarPath = "/pts/v2/payments/{id}/refunds";
+            var localVarPath = $"/pts/v2/payments/{id}/refunds";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -474,7 +474,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Refund a Payment Include the payment ID in the POST request to refund the payment amount. 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundPaymentRequest"></param>
         /// <param name="id">The payment ID. This ID is returned from a previous payment request.</param>
         /// <returns>Task of PtsV2PaymentsRefundPost201Response</returns>
@@ -488,7 +488,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Refund a Payment Include the payment ID in the POST request to refund the payment amount. 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="refundPaymentRequest"></param>
         /// <param name="id">The payment ID. This ID is returned from a previous payment request.</param>
         /// <returns>Task of ApiResponse (PtsV2PaymentsRefundPost201Response)</returns>
@@ -501,7 +501,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling RefundApi->RefundPayment");
 
-            var localVarPath = "/pts/v2/payments/{id}/refunds";
+            var localVarPath = $"/pts/v2/payments/{id}/refunds";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

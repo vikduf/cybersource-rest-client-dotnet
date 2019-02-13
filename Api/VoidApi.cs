@@ -13,10 +13,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using RestSharp;
-using CyberSource.Client;
-using CyberSource.Model;
+using cybersource-rest-client-dotnet.Client;
+using cybersource-rest-client-dotnet.Model;
 
-namespace CyberSource.Api
+namespace cybersource-rest-client-dotnet.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
@@ -30,7 +30,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the capture ID in the POST request to cancel the capture.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCaptureRequest"></param>
         /// <param name="id">The capture ID returned from a previous capture request.</param>
         /// <returns>PtsV2PaymentsVoidsPost201Response</returns>
@@ -42,7 +42,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the capture ID in the POST request to cancel the capture.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCaptureRequest"></param>
         /// <param name="id">The capture ID returned from a previous capture request.</param>
         /// <returns>ApiResponse of PtsV2PaymentsVoidsPost201Response</returns>
@@ -53,7 +53,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the credit ID in the POST request to cancel the credit.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCreditRequest"></param>
         /// <param name="id">The credit ID returned from a previous credit request.</param>
         /// <returns>PtsV2PaymentsVoidsPost201Response</returns>
@@ -65,7 +65,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the credit ID in the POST request to cancel the credit.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCreditRequest"></param>
         /// <param name="id">The credit ID returned from a previous credit request.</param>
         /// <returns>ApiResponse of PtsV2PaymentsVoidsPost201Response</returns>
@@ -76,7 +76,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the payment ID in the POST request to cancel the payment.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidPaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request.</param>
         /// <returns>PtsV2PaymentsVoidsPost201Response</returns>
@@ -88,7 +88,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the payment ID in the POST request to cancel the payment.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidPaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request.</param>
         /// <returns>ApiResponse of PtsV2PaymentsVoidsPost201Response</returns>
@@ -99,7 +99,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the refund ID in the POST request to cancel the refund.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidRefundRequest"></param>
         /// <param name="id">The refund ID returned from a previous refund request.</param>
         /// <returns>PtsV2PaymentsVoidsPost201Response</returns>
@@ -111,7 +111,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the refund ID in the POST request to cancel the refund.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidRefundRequest"></param>
         /// <param name="id">The refund ID returned from a previous refund request.</param>
         /// <returns>ApiResponse of PtsV2PaymentsVoidsPost201Response</returns>
@@ -124,7 +124,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the capture ID in the POST request to cancel the capture.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCaptureRequest"></param>
         /// <param name="id">The capture ID returned from a previous capture request.</param>
         /// <returns>Task of PtsV2PaymentsVoidsPost201Response</returns>
@@ -136,7 +136,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the capture ID in the POST request to cancel the capture.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCaptureRequest"></param>
         /// <param name="id">The capture ID returned from a previous capture request.</param>
         /// <returns>Task of ApiResponse (PtsV2PaymentsVoidsPost201Response)</returns>
@@ -147,7 +147,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the credit ID in the POST request to cancel the credit.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCreditRequest"></param>
         /// <param name="id">The credit ID returned from a previous credit request.</param>
         /// <returns>Task of PtsV2PaymentsVoidsPost201Response</returns>
@@ -159,7 +159,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the credit ID in the POST request to cancel the credit.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCreditRequest"></param>
         /// <param name="id">The credit ID returned from a previous credit request.</param>
         /// <returns>Task of ApiResponse (PtsV2PaymentsVoidsPost201Response)</returns>
@@ -170,7 +170,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the payment ID in the POST request to cancel the payment.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidPaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request.</param>
         /// <returns>Task of PtsV2PaymentsVoidsPost201Response</returns>
@@ -182,7 +182,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the payment ID in the POST request to cancel the payment.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidPaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request.</param>
         /// <returns>Task of ApiResponse (PtsV2PaymentsVoidsPost201Response)</returns>
@@ -193,7 +193,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the refund ID in the POST request to cancel the refund.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidRefundRequest"></param>
         /// <param name="id">The refund ID returned from a previous refund request.</param>
         /// <returns>Task of PtsV2PaymentsVoidsPost201Response</returns>
@@ -205,7 +205,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the refund ID in the POST request to cancel the refund.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidRefundRequest"></param>
         /// <param name="id">The refund ID returned from a previous refund request.</param>
         /// <returns>Task of ApiResponse (PtsV2PaymentsVoidsPost201Response)</returns>
@@ -218,7 +218,7 @@ namespace CyberSource.Api
     /// </summary>
     public partial class VoidApi : IVoidApi
     {
-        private CyberSource.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private cybersource-rest-client-dotnet.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="VoidApi"/> class.
@@ -228,7 +228,7 @@ namespace CyberSource.Api
         {
             this.Configuration = new Configuration(new ApiClient(basePath));
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -250,7 +250,7 @@ namespace CyberSource.Api
             else
                 this.Configuration = configuration;
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -287,7 +287,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
         /// </summary>
-        public CyberSource.Client.ExceptionFactory ExceptionFactory
+        public cybersource-rest-client-dotnet.Client.ExceptionFactory ExceptionFactory
         {
             get
             {
@@ -325,7 +325,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Capture Include the capture ID in the POST request to cancel the capture.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCaptureRequest"></param>
         /// <param name="id">The capture ID returned from a previous capture request.</param>
         /// <returns>PtsV2PaymentsVoidsPost201Response</returns>
@@ -338,7 +338,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Capture Include the capture ID in the POST request to cancel the capture.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCaptureRequest"></param>
         /// <param name="id">The capture ID returned from a previous capture request.</param>
         /// <returns>ApiResponse of PtsV2PaymentsVoidsPost201Response</returns>
@@ -351,7 +351,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling VoidApi->VoidCapture");
 
-            var localVarPath = "/pts/v2/captures/{id}/voids";
+            var localVarPath = $"/pts/v2/captures/{id}/voids";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -405,7 +405,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Capture Include the capture ID in the POST request to cancel the capture.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCaptureRequest"></param>
         /// <param name="id">The capture ID returned from a previous capture request.</param>
         /// <returns>Task of PtsV2PaymentsVoidsPost201Response</returns>
@@ -419,7 +419,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Capture Include the capture ID in the POST request to cancel the capture.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCaptureRequest"></param>
         /// <param name="id">The capture ID returned from a previous capture request.</param>
         /// <returns>Task of ApiResponse (PtsV2PaymentsVoidsPost201Response)</returns>
@@ -432,7 +432,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling VoidApi->VoidCapture");
 
-            var localVarPath = "/pts/v2/captures/{id}/voids";
+            var localVarPath = $"/pts/v2/captures/{id}/voids";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -486,7 +486,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Credit Include the credit ID in the POST request to cancel the credit.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCreditRequest"></param>
         /// <param name="id">The credit ID returned from a previous credit request.</param>
         /// <returns>PtsV2PaymentsVoidsPost201Response</returns>
@@ -499,7 +499,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Credit Include the credit ID in the POST request to cancel the credit.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCreditRequest"></param>
         /// <param name="id">The credit ID returned from a previous credit request.</param>
         /// <returns>ApiResponse of PtsV2PaymentsVoidsPost201Response</returns>
@@ -512,7 +512,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling VoidApi->VoidCredit");
 
-            var localVarPath = "/pts/v2/credits/{id}/voids";
+            var localVarPath = $"/pts/v2/credits/{id}/voids";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -566,7 +566,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Credit Include the credit ID in the POST request to cancel the credit.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCreditRequest"></param>
         /// <param name="id">The credit ID returned from a previous credit request.</param>
         /// <returns>Task of PtsV2PaymentsVoidsPost201Response</returns>
@@ -580,7 +580,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Credit Include the credit ID in the POST request to cancel the credit.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidCreditRequest"></param>
         /// <param name="id">The credit ID returned from a previous credit request.</param>
         /// <returns>Task of ApiResponse (PtsV2PaymentsVoidsPost201Response)</returns>
@@ -593,7 +593,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling VoidApi->VoidCredit");
 
-            var localVarPath = "/pts/v2/credits/{id}/voids";
+            var localVarPath = $"/pts/v2/credits/{id}/voids";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -647,7 +647,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Payment Include the payment ID in the POST request to cancel the payment.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidPaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request.</param>
         /// <returns>PtsV2PaymentsVoidsPost201Response</returns>
@@ -660,7 +660,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Payment Include the payment ID in the POST request to cancel the payment.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidPaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request.</param>
         /// <returns>ApiResponse of PtsV2PaymentsVoidsPost201Response</returns>
@@ -673,7 +673,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling VoidApi->VoidPayment");
 
-            var localVarPath = "/pts/v2/payments/{id}/voids";
+            var localVarPath = $"/pts/v2/payments/{id}/voids";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -727,7 +727,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Payment Include the payment ID in the POST request to cancel the payment.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidPaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request.</param>
         /// <returns>Task of PtsV2PaymentsVoidsPost201Response</returns>
@@ -741,7 +741,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Payment Include the payment ID in the POST request to cancel the payment.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidPaymentRequest"></param>
         /// <param name="id">The payment ID returned from a previous payment request.</param>
         /// <returns>Task of ApiResponse (PtsV2PaymentsVoidsPost201Response)</returns>
@@ -754,7 +754,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling VoidApi->VoidPayment");
 
-            var localVarPath = "/pts/v2/payments/{id}/voids";
+            var localVarPath = $"/pts/v2/payments/{id}/voids";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -808,7 +808,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Refund Include the refund ID in the POST request to cancel the refund.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidRefundRequest"></param>
         /// <param name="id">The refund ID returned from a previous refund request.</param>
         /// <returns>PtsV2PaymentsVoidsPost201Response</returns>
@@ -821,7 +821,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Refund Include the refund ID in the POST request to cancel the refund.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidRefundRequest"></param>
         /// <param name="id">The refund ID returned from a previous refund request.</param>
         /// <returns>ApiResponse of PtsV2PaymentsVoidsPost201Response</returns>
@@ -834,7 +834,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling VoidApi->VoidRefund");
 
-            var localVarPath = "/pts/v2/refunds/{id}/voids";
+            var localVarPath = $"/pts/v2/refunds/{id}/voids";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -888,7 +888,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Refund Include the refund ID in the POST request to cancel the refund.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidRefundRequest"></param>
         /// <param name="id">The refund ID returned from a previous refund request.</param>
         /// <returns>Task of PtsV2PaymentsVoidsPost201Response</returns>
@@ -902,7 +902,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Void a Refund Include the refund ID in the POST request to cancel the refund.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="voidRefundRequest"></param>
         /// <param name="id">The refund ID returned from a previous refund request.</param>
         /// <returns>Task of ApiResponse (PtsV2PaymentsVoidsPost201Response)</returns>
@@ -915,7 +915,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling VoidApi->VoidRefund");
 
-            var localVarPath = "/pts/v2/refunds/{id}/voids";
+            var localVarPath = $"/pts/v2/refunds/{id}/voids";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

@@ -12,7 +12,7 @@
 using System;
 using RestSharp;
 
-namespace CyberSource.Client
+namespace cybersource-rest-client-dotnet.Client
 {
     /// <summary>
     /// A delegate to ExceptionFactory method

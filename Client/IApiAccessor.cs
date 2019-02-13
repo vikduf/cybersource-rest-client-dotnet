@@ -15,7 +15,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using RestSharp;
 
-namespace CyberSource.Client
+namespace cybersource-rest-client-dotnet.Client
 {
     /// <summary>
     /// Represents configuration aspects required to interact with the API endpoints.

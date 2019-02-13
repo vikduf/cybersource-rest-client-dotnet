@@ -13,10 +13,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using RestSharp;
-using CyberSource.Client;
-using CyberSource.Model;
+using cybersource-rest-client-dotnet.Client;
+using cybersource-rest-client-dotnet.Model;
 
-namespace CyberSource.Api
+namespace cybersource-rest-client-dotnet.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
@@ -30,7 +30,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// This endpoint is to get all the user information depending on the filter criteria passed in the query.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">This is the orgId of the organization which the user belongs to. (optional)</param>
         /// <param name="userName">User ID of the user you want to get details on. (optional)</param>
         /// <param name="permissionId">permission that you are trying to search user on. (optional)</param>
@@ -44,7 +44,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// This endpoint is to get all the user information depending on the filter criteria passed in the query.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">This is the orgId of the organization which the user belongs to. (optional)</param>
         /// <param name="userName">User ID of the user you want to get details on. (optional)</param>
         /// <param name="permissionId">permission that you are trying to search user on. (optional)</param>
@@ -59,7 +59,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// This endpoint is to get all the user information depending on the filter criteria passed in the query.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">This is the orgId of the organization which the user belongs to. (optional)</param>
         /// <param name="userName">User ID of the user you want to get details on. (optional)</param>
         /// <param name="permissionId">permission that you are trying to search user on. (optional)</param>
@@ -73,7 +73,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// This endpoint is to get all the user information depending on the filter criteria passed in the query.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">This is the orgId of the organization which the user belongs to. (optional)</param>
         /// <param name="userName">User ID of the user you want to get details on. (optional)</param>
         /// <param name="permissionId">permission that you are trying to search user on. (optional)</param>
@@ -88,7 +88,7 @@ namespace CyberSource.Api
     /// </summary>
     public partial class UserManagementApi : IUserManagementApi
     {
-        private CyberSource.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private cybersource-rest-client-dotnet.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UserManagementApi"/> class.
@@ -98,7 +98,7 @@ namespace CyberSource.Api
         {
             this.Configuration = new Configuration(new ApiClient(basePath));
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -120,7 +120,7 @@ namespace CyberSource.Api
             else
                 this.Configuration = configuration;
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -157,7 +157,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
         /// </summary>
-        public CyberSource.Client.ExceptionFactory ExceptionFactory
+        public cybersource-rest-client-dotnet.Client.ExceptionFactory ExceptionFactory
         {
             get
             {
@@ -195,7 +195,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get user based on organization Id, username, permission and role This endpoint is to get all the user information depending on the filter criteria passed in the query.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">This is the orgId of the organization which the user belongs to. (optional)</param>
         /// <param name="userName">User ID of the user you want to get details on. (optional)</param>
         /// <param name="permissionId">permission that you are trying to search user on. (optional)</param>
@@ -210,7 +210,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get user based on organization Id, username, permission and role This endpoint is to get all the user information depending on the filter criteria passed in the query.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">This is the orgId of the organization which the user belongs to. (optional)</param>
         /// <param name="userName">User ID of the user you want to get details on. (optional)</param>
         /// <param name="permissionId">permission that you are trying to search user on. (optional)</param>
@@ -219,7 +219,7 @@ namespace CyberSource.Api
         public ApiResponse< UmsV1UsersGet200Response > GetUsersWithHttpInfo (string organizationId = null, string userName = null, string permissionId = null, string roleId = null)
         {
 
-            var localVarPath = "/ums/v1/users";
+            var localVarPath = $"/ums/v1/users";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -268,7 +268,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get user based on organization Id, username, permission and role This endpoint is to get all the user information depending on the filter criteria passed in the query.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">This is the orgId of the organization which the user belongs to. (optional)</param>
         /// <param name="userName">User ID of the user you want to get details on. (optional)</param>
         /// <param name="permissionId">permission that you are trying to search user on. (optional)</param>
@@ -284,7 +284,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get user based on organization Id, username, permission and role This endpoint is to get all the user information depending on the filter criteria passed in the query.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="organizationId">This is the orgId of the organization which the user belongs to. (optional)</param>
         /// <param name="userName">User ID of the user you want to get details on. (optional)</param>
         /// <param name="permissionId">permission that you are trying to search user on. (optional)</param>
@@ -293,7 +293,7 @@ namespace CyberSource.Api
         public async System.Threading.Tasks.Task<ApiResponse<UmsV1UsersGet200Response>> GetUsersAsyncWithHttpInfo (string organizationId = null, string userName = null, string permissionId = null, string roleId = null)
         {
 
-            var localVarPath = "/ums/v1/users";
+            var localVarPath = $"/ums/v1/users";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

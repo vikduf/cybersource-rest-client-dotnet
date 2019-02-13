@@ -13,10 +13,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using RestSharp;
-using CyberSource.Client;
-using CyberSource.Model;
+using cybersource-rest-client-dotnet.Client;
+using cybersource-rest-client-dotnet.Model;
 
-namespace CyberSource.Api
+namespace cybersource-rest-client-dotnet.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
@@ -30,7 +30,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns></returns>
@@ -42,7 +42,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -53,7 +53,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns>TmsV1InstrumentidentifiersPost200Response</returns>
@@ -65,7 +65,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns>ApiResponse of TmsV1InstrumentidentifiersPost200Response</returns>
@@ -76,7 +76,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="body">Please specify the previous transaction Id to update.</param>
@@ -89,7 +89,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="body">Please specify the previous transaction Id to update.</param>
@@ -103,7 +103,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns>Task of void</returns>
@@ -115,7 +115,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns>Task of ApiResponse</returns>
@@ -126,7 +126,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns>Task of TmsV1InstrumentidentifiersPost200Response</returns>
@@ -138,7 +138,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns>Task of ApiResponse (TmsV1InstrumentidentifiersPost200Response)</returns>
@@ -149,7 +149,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="body">Please specify the previous transaction Id to update.</param>
@@ -162,7 +162,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="body">Please specify the previous transaction Id to update.</param>
@@ -176,7 +176,7 @@ namespace CyberSource.Api
     /// </summary>
     public partial class InstrumentIdentifierApi : IInstrumentIdentifierApi
     {
-        private CyberSource.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private cybersource-rest-client-dotnet.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="InstrumentIdentifierApi"/> class.
@@ -186,7 +186,7 @@ namespace CyberSource.Api
         {
             this.Configuration = new Configuration(new ApiClient(basePath));
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -208,7 +208,7 @@ namespace CyberSource.Api
             else
                 this.Configuration = configuration;
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -245,7 +245,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
         /// </summary>
-        public CyberSource.Client.ExceptionFactory ExceptionFactory
+        public cybersource-rest-client-dotnet.Client.ExceptionFactory ExceptionFactory
         {
             get
             {
@@ -283,7 +283,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Delete an Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns></returns>
@@ -295,7 +295,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Delete an Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -308,7 +308,7 @@ namespace CyberSource.Api
             if (tokenId == null)
                 throw new ApiException(400, "Missing required parameter 'tokenId' when calling InstrumentIdentifierApi->TmsV1InstrumentidentifiersTokenIdDelete");
 
-            var localVarPath = "/tms/v1/instrumentidentifiers/{tokenId}";
+            var localVarPath = $"/tms/v1/instrumentidentifiers/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -355,7 +355,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Delete an Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns>Task of void</returns>
@@ -368,7 +368,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Delete an Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns>Task of ApiResponse</returns>
@@ -381,7 +381,7 @@ namespace CyberSource.Api
             if (tokenId == null)
                 throw new ApiException(400, "Missing required parameter 'tokenId' when calling InstrumentIdentifierApi->TmsV1InstrumentidentifiersTokenIdDelete");
 
-            var localVarPath = "/tms/v1/instrumentidentifiers/{tokenId}";
+            var localVarPath = $"/tms/v1/instrumentidentifiers/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -428,7 +428,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve an Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns>TmsV1InstrumentidentifiersPost200Response</returns>
@@ -441,7 +441,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve an Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns>ApiResponse of TmsV1InstrumentidentifiersPost200Response</returns>
@@ -454,7 +454,7 @@ namespace CyberSource.Api
             if (tokenId == null)
                 throw new ApiException(400, "Missing required parameter 'tokenId' when calling InstrumentIdentifierApi->TmsV1InstrumentidentifiersTokenIdGet");
 
-            var localVarPath = "/tms/v1/instrumentidentifiers/{tokenId}";
+            var localVarPath = $"/tms/v1/instrumentidentifiers/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -501,7 +501,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve an Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns>Task of TmsV1InstrumentidentifiersPost200Response</returns>
@@ -515,7 +515,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve an Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <returns>Task of ApiResponse (TmsV1InstrumentidentifiersPost200Response)</returns>
@@ -528,7 +528,7 @@ namespace CyberSource.Api
             if (tokenId == null)
                 throw new ApiException(400, "Missing required parameter 'tokenId' when calling InstrumentIdentifierApi->TmsV1InstrumentidentifiersTokenIdGet");
 
-            var localVarPath = "/tms/v1/instrumentidentifiers/{tokenId}";
+            var localVarPath = $"/tms/v1/instrumentidentifiers/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -575,7 +575,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Update a Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="body">Please specify the previous transaction Id to update.</param>
@@ -589,7 +589,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Update a Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="body">Please specify the previous transaction Id to update.</param>
@@ -606,7 +606,7 @@ namespace CyberSource.Api
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling InstrumentIdentifierApi->TmsV1InstrumentidentifiersTokenIdPatch");
 
-            var localVarPath = "/tms/v1/instrumentidentifiers/{tokenId}";
+            var localVarPath = $"/tms/v1/instrumentidentifiers/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -661,7 +661,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Update a Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="body">Please specify the previous transaction Id to update.</param>
@@ -676,7 +676,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Update a Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="body">Please specify the previous transaction Id to update.</param>
@@ -693,7 +693,7 @@ namespace CyberSource.Api
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling InstrumentIdentifierApi->TmsV1InstrumentidentifiersTokenIdPatch");
 
-            var localVarPath = "/tms/v1/instrumentidentifiers/{tokenId}";
+            var localVarPath = $"/tms/v1/instrumentidentifiers/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

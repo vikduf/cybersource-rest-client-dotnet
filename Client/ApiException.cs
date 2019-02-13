@@ -10,7 +10,7 @@
 
 using System;
 
-namespace CyberSource.Client
+namespace cybersource-rest-client-dotnet.Client
 {
     /// <summary>
     /// API Exception

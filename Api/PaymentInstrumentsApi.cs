@@ -13,10 +13,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using RestSharp;
-using CyberSource.Client;
-using CyberSource.Model;
+using cybersource-rest-client-dotnet.Client;
+using cybersource-rest-client-dotnet.Model;
 
-namespace CyberSource.Api
+namespace cybersource-rest-client-dotnet.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
@@ -30,7 +30,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="offset">Starting Payment Instrument record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional)</param>
@@ -44,7 +44,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="offset">Starting Payment Instrument record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional)</param>
@@ -57,7 +57,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="body">Please specify the customers payment details for card or bank account.</param>
         /// <returns>TmsV1PaymentinstrumentsPost201Response</returns>
@@ -69,7 +69,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="body">Please specify the customers payment details for card or bank account.</param>
         /// <returns>ApiResponse of TmsV1PaymentinstrumentsPost201Response</returns>
@@ -80,7 +80,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns></returns>
@@ -92,7 +92,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -103,7 +103,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns>TmsV1PaymentinstrumentsPost201Response</returns>
@@ -115,7 +115,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns>ApiResponse of TmsV1PaymentinstrumentsPost201Response</returns>
@@ -126,7 +126,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <param name="body">Please specify the customers payment details.</param>
@@ -139,7 +139,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <param name="body">Please specify the customers payment details.</param>
@@ -153,7 +153,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="offset">Starting Payment Instrument record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional)</param>
@@ -167,7 +167,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="offset">Starting Payment Instrument record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional)</param>
@@ -180,7 +180,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="body">Please specify the customers payment details for card or bank account.</param>
         /// <returns>Task of TmsV1PaymentinstrumentsPost201Response</returns>
@@ -192,7 +192,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="body">Please specify the customers payment details for card or bank account.</param>
         /// <returns>Task of ApiResponse (TmsV1PaymentinstrumentsPost201Response)</returns>
@@ -203,7 +203,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns>Task of void</returns>
@@ -215,7 +215,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns>Task of ApiResponse</returns>
@@ -226,7 +226,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns>Task of TmsV1PaymentinstrumentsPost201Response</returns>
@@ -238,7 +238,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns>Task of ApiResponse (TmsV1PaymentinstrumentsPost201Response)</returns>
@@ -249,7 +249,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <param name="body">Please specify the customers payment details.</param>
@@ -262,7 +262,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <param name="body">Please specify the customers payment details.</param>
@@ -276,7 +276,7 @@ namespace CyberSource.Api
     /// </summary>
     public partial class PaymentInstrumentsApi : IPaymentInstrumentsApi
     {
-        private CyberSource.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private cybersource-rest-client-dotnet.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="PaymentInstrumentsApi"/> class.
@@ -286,7 +286,7 @@ namespace CyberSource.Api
         {
             this.Configuration = new Configuration(new ApiClient(basePath));
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -308,7 +308,7 @@ namespace CyberSource.Api
             else
                 this.Configuration = configuration;
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -345,7 +345,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
         /// </summary>
-        public CyberSource.Client.ExceptionFactory ExceptionFactory
+        public cybersource-rest-client-dotnet.Client.ExceptionFactory ExceptionFactory
         {
             get
             {
@@ -383,7 +383,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve all Payment Instruments associated with an Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="offset">Starting Payment Instrument record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional)</param>
@@ -398,7 +398,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve all Payment Instruments associated with an Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="offset">Starting Payment Instrument record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional)</param>
@@ -413,7 +413,7 @@ namespace CyberSource.Api
             if (tokenId == null)
                 throw new ApiException(400, "Missing required parameter 'tokenId' when calling PaymentInstrumentsApi->TmsV1InstrumentidentifiersTokenIdPaymentinstrumentsGet");
 
-            var localVarPath = "/tms/v1/instrumentidentifiers/{tokenId}/paymentinstruments";
+            var localVarPath = $"/tms/v1/instrumentidentifiers/{tokenId}/paymentinstruments";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -462,7 +462,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve all Payment Instruments associated with an Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="offset">Starting Payment Instrument record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional)</param>
@@ -478,7 +478,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve all Payment Instruments associated with an Instrument Identifier 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of an Instrument Identifier.</param>
         /// <param name="offset">Starting Payment Instrument record in zero-based dataset that should be returned as the first object in the array. Default is 0. (optional)</param>
@@ -493,7 +493,7 @@ namespace CyberSource.Api
             if (tokenId == null)
                 throw new ApiException(400, "Missing required parameter 'tokenId' when calling PaymentInstrumentsApi->TmsV1InstrumentidentifiersTokenIdPaymentinstrumentsGet");
 
-            var localVarPath = "/tms/v1/instrumentidentifiers/{tokenId}/paymentinstruments";
+            var localVarPath = $"/tms/v1/instrumentidentifiers/{tokenId}/paymentinstruments";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -542,7 +542,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Create a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="body">Please specify the customers payment details for card or bank account.</param>
         /// <returns>TmsV1PaymentinstrumentsPost201Response</returns>
@@ -555,7 +555,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Create a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="body">Please specify the customers payment details for card or bank account.</param>
         /// <returns>ApiResponse of TmsV1PaymentinstrumentsPost201Response</returns>
@@ -568,7 +568,7 @@ namespace CyberSource.Api
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling PaymentInstrumentsApi->TmsV1PaymentinstrumentsPost");
 
-            var localVarPath = "/tms/v1/paymentinstruments";
+            var localVarPath = $"/tms/v1/paymentinstruments";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -622,7 +622,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Create a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="body">Please specify the customers payment details for card or bank account.</param>
         /// <returns>Task of TmsV1PaymentinstrumentsPost201Response</returns>
@@ -636,7 +636,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Create a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="body">Please specify the customers payment details for card or bank account.</param>
         /// <returns>Task of ApiResponse (TmsV1PaymentinstrumentsPost201Response)</returns>
@@ -649,7 +649,7 @@ namespace CyberSource.Api
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling PaymentInstrumentsApi->TmsV1PaymentinstrumentsPost");
 
-            var localVarPath = "/tms/v1/paymentinstruments";
+            var localVarPath = $"/tms/v1/paymentinstruments";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -703,7 +703,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Delete a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns></returns>
@@ -715,7 +715,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Delete a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns>ApiResponse of Object(void)</returns>
@@ -728,7 +728,7 @@ namespace CyberSource.Api
             if (tokenId == null)
                 throw new ApiException(400, "Missing required parameter 'tokenId' when calling PaymentInstrumentsApi->TmsV1PaymentinstrumentsTokenIdDelete");
 
-            var localVarPath = "/tms/v1/paymentinstruments/{tokenId}";
+            var localVarPath = $"/tms/v1/paymentinstruments/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -775,7 +775,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Delete a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns>Task of void</returns>
@@ -788,7 +788,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Delete a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns>Task of ApiResponse</returns>
@@ -801,7 +801,7 @@ namespace CyberSource.Api
             if (tokenId == null)
                 throw new ApiException(400, "Missing required parameter 'tokenId' when calling PaymentInstrumentsApi->TmsV1PaymentinstrumentsTokenIdDelete");
 
-            var localVarPath = "/tms/v1/paymentinstruments/{tokenId}";
+            var localVarPath = $"/tms/v1/paymentinstruments/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -848,7 +848,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns>TmsV1PaymentinstrumentsPost201Response</returns>
@@ -861,7 +861,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns>ApiResponse of TmsV1PaymentinstrumentsPost201Response</returns>
@@ -874,7 +874,7 @@ namespace CyberSource.Api
             if (tokenId == null)
                 throw new ApiException(400, "Missing required parameter 'tokenId' when calling PaymentInstrumentsApi->TmsV1PaymentinstrumentsTokenIdGet");
 
-            var localVarPath = "/tms/v1/paymentinstruments/{tokenId}";
+            var localVarPath = $"/tms/v1/paymentinstruments/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -921,7 +921,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns>Task of TmsV1PaymentinstrumentsPost201Response</returns>
@@ -935,7 +935,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Retrieve a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <returns>Task of ApiResponse (TmsV1PaymentinstrumentsPost201Response)</returns>
@@ -948,7 +948,7 @@ namespace CyberSource.Api
             if (tokenId == null)
                 throw new ApiException(400, "Missing required parameter 'tokenId' when calling PaymentInstrumentsApi->TmsV1PaymentinstrumentsTokenIdGet");
 
-            var localVarPath = "/tms/v1/paymentinstruments/{tokenId}";
+            var localVarPath = $"/tms/v1/paymentinstruments/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -995,7 +995,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Update a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <param name="body">Please specify the customers payment details.</param>
@@ -1009,7 +1009,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Update a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <param name="body">Please specify the customers payment details.</param>
@@ -1026,7 +1026,7 @@ namespace CyberSource.Api
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling PaymentInstrumentsApi->TmsV1PaymentinstrumentsTokenIdPatch");
 
-            var localVarPath = "/tms/v1/paymentinstruments/{tokenId}";
+            var localVarPath = $"/tms/v1/paymentinstruments/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -1081,7 +1081,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Update a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <param name="body">Please specify the customers payment details.</param>
@@ -1096,7 +1096,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Update a Payment Instrument 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="profileId">The id of a profile containing user specific TMS configuration.</param>
         /// <param name="tokenId">The TokenId of a Payment Instrument.</param>
         /// <param name="body">Please specify the customers payment details.</param>
@@ -1113,7 +1113,7 @@ namespace CyberSource.Api
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling PaymentInstrumentsApi->TmsV1PaymentinstrumentsTokenIdPatch");
 
-            var localVarPath = "/tms/v1/paymentinstruments/{tokenId}";
+            var localVarPath = $"/tms/v1/paymentinstruments/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

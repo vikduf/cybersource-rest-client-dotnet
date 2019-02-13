@@ -13,10 +13,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using RestSharp;
-using CyberSource.Client;
-using CyberSource.Model;
+using cybersource-rest-client-dotnet.Client;
+using cybersource-rest-client-dotnet.Model;
 
-namespace CyberSource.Api
+namespace cybersource-rest-client-dotnet.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
@@ -30,7 +30,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Create a search request. 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createSearchRequest"></param>
         /// <returns>TssV2TransactionsPost201Response</returns>
         TssV2TransactionsPost201Response CreateSearch (TssV2TransactionsPostResponse createSearchRequest);
@@ -41,7 +41,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Create a search request. 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createSearchRequest"></param>
         /// <returns>ApiResponse of TssV2TransactionsPost201Response</returns>
         ApiResponse<TssV2TransactionsPost201Response> CreateSearchWithHttpInfo (TssV2TransactionsPostResponse createSearchRequest);
@@ -51,7 +51,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the Search ID in the GET request to retrieve the search results.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Search ID.</param>
         /// <returns>TssV2TransactionsPost201Response</returns>
         TssV2TransactionsPost201Response GetSearch (string id);
@@ -62,7 +62,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the Search ID in the GET request to retrieve the search results.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Search ID.</param>
         /// <returns>ApiResponse of TssV2TransactionsPost201Response</returns>
         ApiResponse<TssV2TransactionsPost201Response> GetSearchWithHttpInfo (string id);
@@ -74,7 +74,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Create a search request. 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createSearchRequest"></param>
         /// <returns>Task of TssV2TransactionsPost201Response</returns>
         System.Threading.Tasks.Task<TssV2TransactionsPost201Response> CreateSearchAsync (TssV2TransactionsPostResponse createSearchRequest);
@@ -85,7 +85,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Create a search request. 
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createSearchRequest"></param>
         /// <returns>Task of ApiResponse (TssV2TransactionsPost201Response)</returns>
         System.Threading.Tasks.Task<ApiResponse<TssV2TransactionsPost201Response>> CreateSearchAsyncWithHttpInfo (TssV2TransactionsPostResponse createSearchRequest);
@@ -95,7 +95,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the Search ID in the GET request to retrieve the search results.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Search ID.</param>
         /// <returns>Task of TssV2TransactionsPost201Response</returns>
         System.Threading.Tasks.Task<TssV2TransactionsPost201Response> GetSearchAsync (string id);
@@ -106,7 +106,7 @@ namespace CyberSource.Api
         /// <remarks>
         /// Include the Search ID in the GET request to retrieve the search results.
         /// </remarks>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Search ID.</param>
         /// <returns>Task of ApiResponse (TssV2TransactionsPost201Response)</returns>
         System.Threading.Tasks.Task<ApiResponse<TssV2TransactionsPost201Response>> GetSearchAsyncWithHttpInfo (string id);
@@ -118,7 +118,7 @@ namespace CyberSource.Api
     /// </summary>
     public partial class SearchTransactionsApi : ISearchTransactionsApi
     {
-        private CyberSource.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
+        private cybersource-rest-client-dotnet.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SearchTransactionsApi"/> class.
@@ -128,7 +128,7 @@ namespace CyberSource.Api
         {
             this.Configuration = new Configuration(new ApiClient(basePath));
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -150,7 +150,7 @@ namespace CyberSource.Api
             else
                 this.Configuration = configuration;
 
-            ExceptionFactory = CyberSource.Client.Configuration.DefaultExceptionFactory;
+            ExceptionFactory = cybersource-rest-client-dotnet.Client.Configuration.DefaultExceptionFactory;
 
             // ensure API client has configuration ready
             if (Configuration.ApiClient.Configuration == null)
@@ -187,7 +187,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
         /// </summary>
-        public CyberSource.Client.ExceptionFactory ExceptionFactory
+        public cybersource-rest-client-dotnet.Client.ExceptionFactory ExceptionFactory
         {
             get
             {
@@ -225,7 +225,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Create a search request Create a search request. 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createSearchRequest"></param>
         /// <returns>TssV2TransactionsPost201Response</returns>
         public TssV2TransactionsPost201Response CreateSearch (TssV2TransactionsPostResponse createSearchRequest)
@@ -237,7 +237,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Create a search request Create a search request. 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createSearchRequest"></param>
         /// <returns>ApiResponse of TssV2TransactionsPost201Response</returns>
         public ApiResponse< TssV2TransactionsPost201Response > CreateSearchWithHttpInfo (TssV2TransactionsPostResponse createSearchRequest)
@@ -246,7 +246,7 @@ namespace CyberSource.Api
             if (createSearchRequest == null)
                 throw new ApiException(400, "Missing required parameter 'createSearchRequest' when calling SearchTransactionsApi->CreateSearch");
 
-            var localVarPath = "/tss/v2/searches";
+            var localVarPath = $"/tss/v2/searches";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -299,7 +299,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Create a search request Create a search request. 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createSearchRequest"></param>
         /// <returns>Task of TssV2TransactionsPost201Response</returns>
         public async System.Threading.Tasks.Task<TssV2TransactionsPost201Response> CreateSearchAsync (TssV2TransactionsPostResponse createSearchRequest)
@@ -312,7 +312,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Create a search request Create a search request. 
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="createSearchRequest"></param>
         /// <returns>Task of ApiResponse (TssV2TransactionsPost201Response)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<TssV2TransactionsPost201Response>> CreateSearchAsyncWithHttpInfo (TssV2TransactionsPostResponse createSearchRequest)
@@ -321,7 +321,7 @@ namespace CyberSource.Api
             if (createSearchRequest == null)
                 throw new ApiException(400, "Missing required parameter 'createSearchRequest' when calling SearchTransactionsApi->CreateSearch");
 
-            var localVarPath = "/tss/v2/searches";
+            var localVarPath = $"/tss/v2/searches";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -374,7 +374,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get Search results Include the Search ID in the GET request to retrieve the search results.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Search ID.</param>
         /// <returns>TssV2TransactionsPost201Response</returns>
         public TssV2TransactionsPost201Response GetSearch (string id)
@@ -386,7 +386,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get Search results Include the Search ID in the GET request to retrieve the search results.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Search ID.</param>
         /// <returns>ApiResponse of TssV2TransactionsPost201Response</returns>
         public ApiResponse< TssV2TransactionsPost201Response > GetSearchWithHttpInfo (string id)
@@ -395,7 +395,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling SearchTransactionsApi->GetSearch");
 
-            var localVarPath = "/tss/v2/searches/{id}";
+            var localVarPath = $"/tss/v2/searches/{id}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -441,7 +441,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get Search results Include the Search ID in the GET request to retrieve the search results.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Search ID.</param>
         /// <returns>Task of TssV2TransactionsPost201Response</returns>
         public async System.Threading.Tasks.Task<TssV2TransactionsPost201Response> GetSearchAsync (string id)
@@ -454,7 +454,7 @@ namespace CyberSource.Api
         /// <summary>
         /// Get Search results Include the Search ID in the GET request to retrieve the search results.
         /// </summary>
-        /// <exception cref="CyberSource.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <exception cref="cybersource-rest-client-dotnet.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">Search ID.</param>
         /// <returns>Task of ApiResponse (TssV2TransactionsPost201Response)</returns>
         public async System.Threading.Tasks.Task<ApiResponse<TssV2TransactionsPost201Response>> GetSearchAsyncWithHttpInfo (string id)
@@ -463,7 +463,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling SearchTransactionsApi->GetSearch");
 
-            var localVarPath = "/tss/v2/searches/{id}";
+            var localVarPath = $"/tss/v2/searches/{id}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
