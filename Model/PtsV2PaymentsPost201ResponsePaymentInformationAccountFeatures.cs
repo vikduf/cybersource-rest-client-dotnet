@@ -446,10 +446,10 @@ namespace CyberSource.Model
             }
 
             // BalanceSign (string) maxLength
-            //if(this.BalanceSign != null && this.BalanceSign.Length > 1)
-            //{
-            //    yield return new System.ComponentModel.DataAnnotations.ValidationResult("Invalid value for BalanceSign, length must be less than 1.", new [] { "BalanceSign" });
-            //}
+            if(this.BalanceSign != null && this.BalanceSign.Length > 1)
+            {
+                yield return new System.ComponentModel.DataAnnotations.ValidationResult("Invalid value for BalanceSign, length must be less than 1.", new [] { "BalanceSign" });
+            }
 
             // AffluenceIndicator (string) maxLength
             if(this.AffluenceIndicator != null && this.AffluenceIndicator.Length > 13)

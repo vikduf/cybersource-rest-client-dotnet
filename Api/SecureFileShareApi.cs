@@ -58,7 +58,7 @@ namespace CyberSource.Api
         /// <param name="endDate">Valid end date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>V1FileDetailsGet200Response</returns>
-        V1FileDetailsGet200Response GetFileDetails (string startDate, string endDate, string organizationId = null);
+        V1FileDetailsGet200Response GetFileDetails (DateTime? startDate, DateTime? endDate, string organizationId = null);
 
         /// <summary>
         /// Get list of files
@@ -71,7 +71,7 @@ namespace CyberSource.Api
         /// <param name="endDate">Valid end date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>ApiResponse of V1FileDetailsGet200Response</returns>
-        ApiResponse<V1FileDetailsGet200Response> GetFileDetailsWithHttpInfo (string startDate, string endDate, string organizationId = null);
+        ApiResponse<V1FileDetailsGet200Response> GetFileDetailsWithHttpInfo (DateTime? startDate, DateTime? endDate, string organizationId = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -259,7 +259,7 @@ namespace CyberSource.Api
             if (fileId == null)
                 throw new ApiException(400, "Missing required parameter 'fileId' when calling SecureFileShareApi->GetFile");
 
-            var localVarPath = $"/sfs/v1/files/{fileId}";
+            var localVarPath = "/v1/files/{fileId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -302,7 +302,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                localVarResponse.Content);
+                null);
         }
 
         /// <summary>
@@ -385,7 +385,7 @@ namespace CyberSource.Api
         /// <param name="endDate">Valid end date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>V1FileDetailsGet200Response</returns>
-        public V1FileDetailsGet200Response GetFileDetails (string startDate, string endDate, string organizationId = null)
+        public V1FileDetailsGet200Response GetFileDetails (DateTime? startDate, DateTime? endDate, string organizationId = null)
         {
              ApiResponse<V1FileDetailsGet200Response> localVarResponse = GetFileDetailsWithHttpInfo(startDate, endDate, organizationId);
              return localVarResponse.Data;
@@ -399,7 +399,7 @@ namespace CyberSource.Api
         /// <param name="endDate">Valid end date in **ISO 8601 format** Please refer the following link to know more about ISO 8601 format. - https://xml2rfc.tools.ietf.org/public/rfc/html/rfc3339.html#anchor14   **Example date format:**   - yyyy-MM-dd </param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>ApiResponse of V1FileDetailsGet200Response</returns>
-        public ApiResponse< V1FileDetailsGet200Response > GetFileDetailsWithHttpInfo (string startDate, string endDate, string organizationId = null)
+        public ApiResponse< V1FileDetailsGet200Response > GetFileDetailsWithHttpInfo (DateTime? startDate, DateTime? endDate, string organizationId = null)
         {
             // verify the required parameter 'startDate' is set
             if (startDate == null)
@@ -408,7 +408,7 @@ namespace CyberSource.Api
             if (endDate == null)
                 throw new ApiException(400, "Missing required parameter 'endDate' when calling SecureFileShareApi->GetFileDetails");
 
-            var localVarPath = "/sfs/v1/file-details";
+            var localVarPath = "/v1/file-details";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

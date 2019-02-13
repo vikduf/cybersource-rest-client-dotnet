@@ -334,7 +334,7 @@ namespace CyberSource.Api
             if (requestBody == null)
                 throw new ApiException(400, "Missing required parameter 'requestBody' when calling ReportSubscriptionsApi->CreateSubscription");
 
-            var localVarPath = $"/reporting/v3/report-subscriptions/{reportName}";
+            var localVarPath = "/reporting/v3/report-subscriptions/{reportName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -488,7 +488,7 @@ namespace CyberSource.Api
             if (reportName == null)
                 throw new ApiException(400, "Missing required parameter 'reportName' when calling ReportSubscriptionsApi->DeleteSubscription");
 
-            var localVarPath = $"/reporting/v3/report-subscriptions/{reportName}";
+            var localVarPath = "/reporting/v3/report-subscriptions/{reportName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -745,7 +745,7 @@ namespace CyberSource.Api
             if (reportName == null)
                 throw new ApiException(400, "Missing required parameter 'reportName' when calling ReportSubscriptionsApi->GetSubscription");
 
-            var localVarPath = $"/reporting/v3/report-subscriptions/{reportName}";
+            var localVarPath = "/reporting/v3/report-subscriptions/{reportName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

@@ -75,7 +75,7 @@ namespace CyberSource.Model
         /// <param name="ReportFilters">ReportFilters.</param>
         /// <param name="ReportPreferences">ReportPreferences.</param>
         /// <param name="SelectedMerchantGroupName">SelectedMerchantGroupName.</param>
-        public RequestBody(string OrganizationId = default(string), string ReportDefinitionName = default(string), List<string> ReportFields = default(List<string>), ReportMimeTypeEnum? ReportMimeType = default(ReportMimeTypeEnum?), string ReportFrequency = default(string), string ReportName = default(string), string Timezone = default(string), string StartTime = default(string), int? StartDay = default(int?), Dictionary<string, List<string>> ReportFilters = default(Dictionary<string, List<string>>), ReportingV3ReportSubscriptionsGet200ResponseReportPreferences ReportPreferences = default(ReportingV3ReportSubscriptionsGet200ResponseReportPreferences), string SelectedMerchantGroupName = default(string))
+        public RequestBody(string OrganizationId = default(string), string ReportDefinitionName = default(string), List<string> ReportFields = default(List<string>), ReportMimeTypeEnum? ReportMimeType = default(ReportMimeTypeEnum?), string ReportFrequency = default(string), string ReportName = default(string), string Timezone = default(string), DateTime? StartTime = default(DateTime?), int? StartDay = default(int?), Dictionary<string, List<string>> ReportFilters = default(Dictionary<string, List<string>>), ReportingV3ReportSubscriptionsGet200ResponseReportPreferences ReportPreferences = default(ReportingV3ReportSubscriptionsGet200ResponseReportPreferences), string SelectedMerchantGroupName = default(string))
         {
             // to ensure "ReportDefinitionName" is required (not null)
             if (ReportDefinitionName == null)
@@ -156,7 +156,7 @@ namespace CyberSource.Model
         /// Gets or Sets StartTime
         /// </summary>
         [DataMember(Name="startTime", EmitDefaultValue=false)]
-        public string StartTime { get; set; }
+        public DateTime? StartTime { get; set; }
 
         /// <summary>
         /// Gets or Sets StartDay

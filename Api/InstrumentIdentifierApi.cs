@@ -308,7 +308,7 @@ namespace CyberSource.Api
             if (tokenId == null)
                 throw new ApiException(400, "Missing required parameter 'tokenId' when calling InstrumentIdentifierApi->TmsV1InstrumentidentifiersTokenIdDelete");
 
-            var localVarPath = $"/tms/v1/instrumentidentifiers/{tokenId}";
+            var localVarPath = "/tms/v1/instrumentidentifiers/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -324,7 +324,7 @@ namespace CyberSource.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "application/hal+json;charset=utf-8"
+                "application/json;charset=utf-8"
             };
             String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -454,7 +454,7 @@ namespace CyberSource.Api
             if (tokenId == null)
                 throw new ApiException(400, "Missing required parameter 'tokenId' when calling InstrumentIdentifierApi->TmsV1InstrumentidentifiersTokenIdGet");
 
-            var localVarPath = $"/tms/v1/instrumentidentifiers/{tokenId}";
+            var localVarPath = "/tms/v1/instrumentidentifiers/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -470,7 +470,7 @@ namespace CyberSource.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "application/hal+json;charset=utf-8"
+                "application/json;charset=utf-8"
             };
             String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -606,7 +606,7 @@ namespace CyberSource.Api
             if (body == null)
                 throw new ApiException(400, "Missing required parameter 'body' when calling InstrumentIdentifierApi->TmsV1InstrumentidentifiersTokenIdPatch");
 
-            var localVarPath = $"/tms/v1/instrumentidentifiers/{tokenId}";
+            var localVarPath = "/tms/v1/instrumentidentifiers/{tokenId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

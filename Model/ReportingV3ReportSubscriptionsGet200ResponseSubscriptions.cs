@@ -102,10 +102,11 @@ namespace CyberSource.Model
         /// <param name="Timezone">Time Zone.</param>
         /// <param name="StartTime">Start Time.</param>
         /// <param name="StartDay">Start Day.</param>
-        /// <param name="ReportFields">List of all fields String values.</param>        
+        /// <param name="ReportFields">List of all fields String values.</param>
+        /// <param name="ReportFilters">List of filters to apply.</param>
         /// <param name="ReportPreferences">ReportPreferences.</param>
         /// <param name="SelectedMerchantGroupName">Selected name of the group..</param>
-        public ReportingV3ReportSubscriptionsGet200ResponseSubscriptions(string OrganizationId = default(string), string ReportDefinitionId = default(string), string ReportDefinitionName = default(string), ReportMimeTypeEnum? ReportMimeType = default(ReportMimeTypeEnum?), ReportFrequencyEnum? ReportFrequency = default(ReportFrequencyEnum?), string ReportName = default(string), string Timezone = default(string), string StartTime = default(string), int? StartDay = default(int?), List<string> ReportFields = default(List<string>), ReportingV3ReportSubscriptionsGet200ResponseReportPreferences ReportPreferences = default(ReportingV3ReportSubscriptionsGet200ResponseReportPreferences), string SelectedMerchantGroupName = default(string))
+        public ReportingV3ReportSubscriptionsGet200ResponseSubscriptions(string OrganizationId = default(string), string ReportDefinitionId = default(string), string ReportDefinitionName = default(string), ReportMimeTypeEnum? ReportMimeType = default(ReportMimeTypeEnum?), ReportFrequencyEnum? ReportFrequency = default(ReportFrequencyEnum?), string ReportName = default(string), string Timezone = default(string), DateTime? StartTime = default(DateTime?), int? StartDay = default(int?), List<string> ReportFields = default(List<string>), List<string> ReportFilters = default(List<string>), ReportingV3ReportSubscriptionsGet200ResponseReportPreferences ReportPreferences = default(ReportingV3ReportSubscriptionsGet200ResponseReportPreferences), string SelectedMerchantGroupName = default(string))
         {
             this.OrganizationId = OrganizationId;
             this.ReportDefinitionId = ReportDefinitionId;
@@ -117,7 +118,7 @@ namespace CyberSource.Model
             this.StartTime = StartTime;
             this.StartDay = StartDay;
             this.ReportFields = ReportFields;
-            //this.ReportFilters = ReportFilters;
+            this.ReportFilters = ReportFilters;
             this.ReportPreferences = ReportPreferences;
             this.SelectedMerchantGroupName = SelectedMerchantGroupName;
         }
@@ -164,7 +165,7 @@ namespace CyberSource.Model
         /// </summary>
         /// <value>Start Time</value>
         [DataMember(Name="startTime", EmitDefaultValue=false)]
-        public string StartTime { get; set; }
+        public DateTime? StartTime { get; set; }
 
         /// <summary>
         /// Start Day
@@ -184,8 +185,8 @@ namespace CyberSource.Model
         /// List of filters to apply
         /// </summary>
         /// <value>List of filters to apply</value>
-        //[DataMember(Name="reportFilters", EmitDefaultValue=false)]
-        //public string ReportFilters { get; set; }
+        [DataMember(Name="reportFilters", EmitDefaultValue=false)]
+        public List<string> ReportFilters { get; set; }
 
         /// <summary>
         /// Gets or Sets ReportPreferences
@@ -218,7 +219,7 @@ namespace CyberSource.Model
             sb.Append("  StartTime: ").Append(StartTime).Append("\n");
             sb.Append("  StartDay: ").Append(StartDay).Append("\n");
             sb.Append("  ReportFields: ").Append(ReportFields).Append("\n");
-            //sb.Append("  ReportFilters: ").Append(ReportFilters).Append("\n");
+            sb.Append("  ReportFilters: ").Append(ReportFilters).Append("\n");
             sb.Append("  ReportPreferences: ").Append(ReportPreferences).Append("\n");
             sb.Append("  SelectedMerchantGroupName: ").Append(SelectedMerchantGroupName).Append("\n");
             sb.Append("}\n");
@@ -307,11 +308,11 @@ namespace CyberSource.Model
                     this.ReportFields != null &&
                     this.ReportFields.SequenceEqual(other.ReportFields)
                 ) && 
-                //(
-                //    this.ReportFilters == other.ReportFilters ||
-                //    this.ReportFilters != null &&
-                //    this.ReportFilters.SequenceEqual(other.ReportFilters)
-                //) && 
+                (
+                    this.ReportFilters == other.ReportFilters ||
+                    this.ReportFilters != null &&
+                    this.ReportFilters.SequenceEqual(other.ReportFilters)
+                ) && 
                 (
                     this.ReportPreferences == other.ReportPreferences ||
                     this.ReportPreferences != null &&
@@ -355,8 +356,8 @@ namespace CyberSource.Model
                     hash = hash * 59 + this.StartDay.GetHashCode();
                 if (this.ReportFields != null)
                     hash = hash * 59 + this.ReportFields.GetHashCode();
-                //if (this.ReportFilters != null)
-                //    hash = hash * 59 + this.ReportFilters.GetHashCode();
+                if (this.ReportFilters != null)
+                    hash = hash * 59 + this.ReportFilters.GetHashCode();
                 if (this.ReportPreferences != null)
                     hash = hash * 59 + this.ReportPreferences.GetHashCode();
                 if (this.SelectedMerchantGroupName != null)

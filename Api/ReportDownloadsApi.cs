@@ -35,7 +35,7 @@ namespace CyberSource.Api
         /// <param name="reportName">Name of the report to download</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns></returns>
-        void DownloadReport (string reportDate, string reportName, string organizationId = null);
+        void DownloadReport (DateTime? reportDate, string reportName, string organizationId = null);
 
         /// <summary>
         /// Download a report
@@ -48,7 +48,7 @@ namespace CyberSource.Api
         /// <param name="reportName">Name of the report to download</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DownloadReportWithHttpInfo (string reportDate, string reportName, string organizationId = null);
+        ApiResponse<Object> DownloadReportWithHttpInfo (DateTime? reportDate, string reportName, string organizationId = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -196,7 +196,7 @@ namespace CyberSource.Api
         /// <param name="reportName">Name of the report to download</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns></returns>
-        public void DownloadReport (string reportDate, string reportName, string organizationId = null)
+        public void DownloadReport (DateTime? reportDate, string reportName, string organizationId = null)
         {
              DownloadReportWithHttpInfo(reportDate, reportName, organizationId);
         }
@@ -209,7 +209,7 @@ namespace CyberSource.Api
         /// <param name="reportName">Name of the report to download</param>
         /// <param name="organizationId">Valid Cybersource Organization Id (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DownloadReportWithHttpInfo (string reportDate, string reportName, string organizationId = null)
+        public ApiResponse<Object> DownloadReportWithHttpInfo (DateTime? reportDate, string reportName, string organizationId = null)
         {
             // verify the required parameter 'reportDate' is set
             if (reportDate == null)
@@ -218,13 +218,7 @@ namespace CyberSource.Api
             if (reportName == null)
                 throw new ApiException(400, "Missing required parameter 'reportName' when calling ReportDownloadsApi->DownloadReport");
 
-            var localVarPath = $"/reporting/v3/report-downloads/?reportDate={reportDate}&reportName={reportName}";
-
-            if (!string.IsNullOrEmpty(organizationId))
-            {
-                localVarPath += $"&organizationId={organizationId}";
-            }
-
+            var localVarPath = "/reporting/v3/report-downloads/?reportDate={reportDate}&reportName={reportName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -267,7 +261,7 @@ namespace CyberSource.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                localVarResponse.Content);
+                null);
         }
 
         /// <summary>
@@ -301,7 +295,7 @@ namespace CyberSource.Api
             if (reportName == null)
                 throw new ApiException(400, "Missing required parameter 'reportName' when calling ReportDownloadsApi->DownloadReport");
 
-            var localVarPath = "/reporting/v3/report-downloads";
+            var localVarPath = "/reporting/v3/report-downloads/?reportDate={reportDate}&reportName={reportName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -324,9 +318,9 @@ namespace CyberSource.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (organizationId != null) localVarQueryParams.Add("organizationId", Configuration.ApiClient.ParameterToString(organizationId)); // query parameter
-            if (reportDate != null) localVarQueryParams.Add("reportDate", Configuration.ApiClient.ParameterToString(reportDate)); // query parameter
-            if (reportName != null) localVarQueryParams.Add("reportName", Configuration.ApiClient.ParameterToString(reportName)); // query parameter
+            //if (organizationId != null) localVarQueryParams.Add("organizationId", Configuration.ApiClient.ParameterToString(organizationId)); // query parameter
+            //if (reportDate != null) localVarQueryParams.Add("reportDate", Configuration.ApiClient.ParameterToString(reportDate)); // query parameter
+            //if (reportName != null) localVarQueryParams.Add("reportName", Configuration.ApiClient.ParameterToString(reportName)); // query parameter
 
 
             // make the HTTP request

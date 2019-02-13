@@ -203,7 +203,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling TransactionBatchApi->PtsV1TransactionBatchesIdGet");
 
-            var localVarPath = $"/pts/v1/transaction-batches/{id}";
+            var localVarPath = "/pts/v1/transaction-batches/{id}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

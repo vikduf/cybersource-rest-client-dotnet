@@ -252,7 +252,7 @@ namespace CyberSource.Api
             if (reportDefinitionName == null)
                 throw new ApiException(400, "Missing required parameter 'reportDefinitionName' when calling ReportDefinitionsApi->GetResourceInfoByReportDefinition");
 
-            var localVarPath = $"/reporting/v3/report-definitions/{reportDefinitionName}";
+            var localVarPath = "/reporting/v3/report-definitions/{reportDefinitionName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);

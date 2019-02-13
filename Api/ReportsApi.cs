@@ -85,7 +85,7 @@ namespace CyberSource.Api
         /// <param name="reportDefinitionId">Valid Report Definition Id (optional)</param>
         /// <param name="reportStatus">Valid Report Status (optional)</param>
         /// <returns>ReportingV3ReportsGet200Response</returns>
-        ReportingV3ReportsGet200Response SearchReports (string startTime, string endTime, string timeQueryType, string organizationId = null, string reportMimeType = null, string reportFrequency = null, string reportName = null, int? reportDefinitionId = null, string reportStatus = null);
+        ReportingV3ReportsGet200Response SearchReports (DateTime? startTime, DateTime? endTime, string timeQueryType, string organizationId = null, string reportMimeType = null, string reportFrequency = null, string reportName = null, int? reportDefinitionId = null, string reportStatus = null);
 
         /// <summary>
         /// Retrieve available reports
@@ -104,7 +104,7 @@ namespace CyberSource.Api
         /// <param name="reportDefinitionId">Valid Report Definition Id (optional)</param>
         /// <param name="reportStatus">Valid Report Status (optional)</param>
         /// <returns>ApiResponse of ReportingV3ReportsGet200Response</returns>
-        ApiResponse<ReportingV3ReportsGet200Response> SearchReportsWithHttpInfo (string startTime, string endTime, string timeQueryType, string organizationId = null, string reportMimeType = null, string reportFrequency = null, string reportName = null, int? reportDefinitionId = null, string reportStatus = null);
+        ApiResponse<ReportingV3ReportsGet200Response> SearchReportsWithHttpInfo (DateTime? startTime, DateTime? endTime, string timeQueryType, string organizationId = null, string reportMimeType = null, string reportFrequency = null, string reportName = null, int? reportDefinitionId = null, string reportStatus = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -473,7 +473,7 @@ namespace CyberSource.Api
             if (reportId == null)
                 throw new ApiException(400, "Missing required parameter 'reportId' when calling ReportsApi->GetReportByReportId");
 
-            var localVarPath = $"/reporting/v3/reports/{reportId}";
+            var localVarPath = "/reporting/v3/reports/{reportId}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -604,7 +604,7 @@ namespace CyberSource.Api
         /// <param name="reportDefinitionId">Valid Report Definition Id (optional)</param>
         /// <param name="reportStatus">Valid Report Status (optional)</param>
         /// <returns>ReportingV3ReportsGet200Response</returns>
-        public ReportingV3ReportsGet200Response SearchReports (string startTime, string endTime, string timeQueryType, string organizationId = null, string reportMimeType = null, string reportFrequency = null, string reportName = null, int? reportDefinitionId = null, string reportStatus = null)
+        public ReportingV3ReportsGet200Response SearchReports (DateTime? startTime, DateTime? endTime, string timeQueryType, string organizationId = null, string reportMimeType = null, string reportFrequency = null, string reportName = null, int? reportDefinitionId = null, string reportStatus = null)
         {
              ApiResponse<ReportingV3ReportsGet200Response> localVarResponse = SearchReportsWithHttpInfo(startTime, endTime, timeQueryType, organizationId, reportMimeType, reportFrequency, reportName, reportDefinitionId, reportStatus);
              return localVarResponse.Data;
@@ -624,7 +624,7 @@ namespace CyberSource.Api
         /// <param name="reportDefinitionId">Valid Report Definition Id (optional)</param>
         /// <param name="reportStatus">Valid Report Status (optional)</param>
         /// <returns>ApiResponse of ReportingV3ReportsGet200Response</returns>
-        public ApiResponse< ReportingV3ReportsGet200Response > SearchReportsWithHttpInfo (string startTime, string endTime, string timeQueryType, string organizationId = null, string reportMimeType = null, string reportFrequency = null, string reportName = null, int? reportDefinitionId = null, string reportStatus = null)
+        public ApiResponse< ReportingV3ReportsGet200Response > SearchReportsWithHttpInfo (DateTime? startTime, DateTime? endTime, string timeQueryType, string organizationId = null, string reportMimeType = null, string reportFrequency = null, string reportName = null, int? reportDefinitionId = null, string reportStatus = null)
         {
             // verify the required parameter 'startTime' is set
             if (startTime == null)
@@ -636,29 +636,7 @@ namespace CyberSource.Api
             if (timeQueryType == null)
                 throw new ApiException(400, "Missing required parameter 'timeQueryType' when calling ReportsApi->SearchReports");
 
-            var localVarPath = $"/reporting/v3/reports";
-            localVarPath += $"?startTime={startTime}";
-            localVarPath += $"&endTime={endTime}";
-            localVarPath += $"&timeQueryType={timeQueryType}";
-
-            if (!string.IsNullOrEmpty(organizationId))
-                localVarPath += $"&organizationId={organizationId}";
-
-            if (!string.IsNullOrEmpty(reportMimeType))
-                localVarPath += $"&={reportMimeType}";
-
-            if (!string.IsNullOrEmpty(reportFrequency))
-                localVarPath += $"&={reportFrequency}";
-
-            if (!string.IsNullOrEmpty(reportName))
-                localVarPath += $"&={reportName}";
-
-            if (!string.IsNullOrEmpty(reportDefinitionId.ToString()))
-                localVarPath += $"&={reportDefinitionId}";
-
-            if (!string.IsNullOrEmpty(reportStatus))
-                localVarPath += $"&={reportStatus}";
-
+            var localVarPath = "/reporting/v3/reports";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -680,15 +658,15 @@ namespace CyberSource.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            //if (organizationId != null) localVarQueryParams.Add("organizationId", Configuration.ApiClient.ParameterToString(organizationId)); // query parameter
-            //if (startTime != null) localVarQueryParams.Add("startTime", Configuration.ApiClient.ParameterToString(startTime)); // query parameter
-            //if (endTime != null) localVarQueryParams.Add("endTime", Configuration.ApiClient.ParameterToString(endTime)); // query parameter
-            //if (timeQueryType != null) localVarQueryParams.Add("timeQueryType", Configuration.ApiClient.ParameterToString(timeQueryType)); // query parameter
-            //if (reportMimeType != null) localVarQueryParams.Add("reportMimeType", Configuration.ApiClient.ParameterToString(reportMimeType)); // query parameter
-            //if (reportFrequency != null) localVarQueryParams.Add("reportFrequency", Configuration.ApiClient.ParameterToString(reportFrequency)); // query parameter
-            //if (reportName != null) localVarQueryParams.Add("reportName", Configuration.ApiClient.ParameterToString(reportName)); // query parameter
-            //if (reportDefinitionId != null) localVarQueryParams.Add("reportDefinitionId", Configuration.ApiClient.ParameterToString(reportDefinitionId)); // query parameter
-            //if (reportStatus != null) localVarQueryParams.Add("reportStatus", Configuration.ApiClient.ParameterToString(reportStatus)); // query parameter
+            if (organizationId != null) localVarQueryParams.Add("organizationId", Configuration.ApiClient.ParameterToString(organizationId)); // query parameter
+            if (startTime != null) localVarQueryParams.Add("startTime", Configuration.ApiClient.ParameterToString(startTime)); // query parameter
+            if (endTime != null) localVarQueryParams.Add("endTime", Configuration.ApiClient.ParameterToString(endTime)); // query parameter
+            if (timeQueryType != null) localVarQueryParams.Add("timeQueryType", Configuration.ApiClient.ParameterToString(timeQueryType)); // query parameter
+            if (reportMimeType != null) localVarQueryParams.Add("reportMimeType", Configuration.ApiClient.ParameterToString(reportMimeType)); // query parameter
+            if (reportFrequency != null) localVarQueryParams.Add("reportFrequency", Configuration.ApiClient.ParameterToString(reportFrequency)); // query parameter
+            if (reportName != null) localVarQueryParams.Add("reportName", Configuration.ApiClient.ParameterToString(reportName)); // query parameter
+            if (reportDefinitionId != null) localVarQueryParams.Add("reportDefinitionId", Configuration.ApiClient.ParameterToString(reportDefinitionId)); // query parameter
+            if (reportStatus != null) localVarQueryParams.Add("reportStatus", Configuration.ApiClient.ParameterToString(reportStatus)); // query parameter
 
 
             // make the HTTP request

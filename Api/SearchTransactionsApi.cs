@@ -395,7 +395,7 @@ namespace CyberSource.Api
             if (id == null)
                 throw new ApiException(400, "Missing required parameter 'id' when calling SearchTransactionsApi->GetSearch");
 
-            var localVarPath = $"/tss/v2/searches/{id}";
+            var localVarPath = "/tss/v2/searches/{id}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
@@ -411,7 +411,7 @@ namespace CyberSource.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                //"application/hal+json;charset=utf-8"
+                "application/json;charset=utf-8"
             };
             String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
