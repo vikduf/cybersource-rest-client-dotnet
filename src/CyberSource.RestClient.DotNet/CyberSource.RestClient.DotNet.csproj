@@ -11,7 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CyberSource.Authentication" Version="0.1.1" />
+    <ProjectReference Include="..\..\..\CyberSource.Authentication\src\CyberSource.Authentication\CyberSource.Authentication.csproj" />
     <PackageReference Include="Microsoft.CSharp" Version="4.5.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="RestSharp" Version="106.6.9" />
