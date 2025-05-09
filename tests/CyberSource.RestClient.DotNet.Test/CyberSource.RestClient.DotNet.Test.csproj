@@ -16,7 +16,7 @@ OpenAPI spec version: 0.0.1
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CyberSource.Test</RootNamespace>
     <AssemblyName>CyberSource.RestClient.DotNet.Test</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFramework>net8.0</TargetFramework>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
